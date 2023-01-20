@@ -59,7 +59,7 @@ export default function VerticalTabs() {
   };
 
   return (
-    <div id="massages" className="pt-8 lg:pt-14">
+    <div id="massages">
       <ThemeProvider theme={theme}>
         <SLayout>
           <Dots></Dots>
@@ -75,6 +75,7 @@ export default function VerticalTabs() {
                 flexGrow: 1,
                 bgcolor: "background.paper",
                 display: "flex",
+                flexWrap: { xs: "wrap", lg: "nowrap" },
                 backgroundColor: "transparent",
               }}
             >
@@ -89,9 +90,14 @@ export default function VerticalTabs() {
                   borderColor: "transparent",
                   display: "flex",
                   gap: "1rem",
-                  alignItems: "start",
+                  alignItems: {
+                    xs: "center",
+                    sm: "center",
+                    md: "center",
+                    lg: "start",
+                  },
                   columnGap: ".75rem",
-                  width: 300,
+                  width: { xs: 1, lg: 300 },
                   backgroundColor: "transparent",
                 }}
               >
@@ -102,6 +108,7 @@ export default function VerticalTabs() {
                     my: 1,
                     py: 3,
                     borderRadius: 2,
+                    width: 1,
                   }}
                   label="Shiatsu massage"
                   {...a11yProps(0)}
@@ -113,6 +120,7 @@ export default function VerticalTabs() {
                     my: 1,
                     py: 3,
                     borderRadius: 2,
+                    width: 1,
                   }}
                   label="Hot stone massage"
                   {...a11yProps(1)}
@@ -124,6 +132,7 @@ export default function VerticalTabs() {
                     my: 1,
                     py: 3,
                     borderRadius: 2,
+                    width: 1,
                   }}
                   label="Chair massage"
                   {...a11yProps(2)}
@@ -135,6 +144,7 @@ export default function VerticalTabs() {
                     my: 1,
                     py: 3,
                     borderRadius: 2,
+                    width: 1,
                   }}
                   label="Sportmassage"
                   {...a11yProps(4)}

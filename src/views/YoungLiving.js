@@ -7,7 +7,8 @@ import WhyIcon from "../components/why-icon/WhyIcon";
 import ContactFrom from "../components/contact/ContactFrom";
 import Gallary from "../components/gallary/Gallary";
 import HeroSectionOther from "../components/hero-section/HeroSectionOther";
-export default function Import() {
+
+export default function YoungLiving() {
   return (
     <div className="text-light-sky">
       <Header></Header>

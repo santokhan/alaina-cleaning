@@ -5,9 +5,9 @@ export default function About() {
     <div id="about">
       <SLayout>
         <SMain>
-          <div className="max-w-2xl mx-auto relative">
+          <div className="max-w-2xl mx-auto relative w-full overflow-hidden">
             <div className="hidden lg:flex flex-nowrap gap-2 justify-center items-center absolute -right-56 bottom-2 -rotate-90">
-              <a href="http://massagejanmorks.com" className="font-semibold">
+              <a href="http://massagejanmorks.nl" className="font-semibold">
                 massagejanmorks.nl
               </a>
               <div className="vertical-line bg-green-700"></div>
@@ -27,8 +27,8 @@ export default function About() {
               the most popular treatments on a spa menu.
             </SDes>
             <div className="flex flex-nowrap gap-2 justify-end items-center lg:hidden py-3">
-              <a href="http://iconimex.com" className="font-semibold">
-                iconimex.com
+              <a href="http://massagejanmorks.nl" className="font-semibold">
+                massagejanmorks.nl
               </a>
               <div className="vertical-line bg-green-700"></div>
             </div>

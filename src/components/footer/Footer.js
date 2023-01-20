@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="w-auto py-2 lg:py-0">
           <div className="uppercase font-bold mb-2">Sitemap</div>
           <NL>
-            <NLink path="/#home">Home</NLink>
+            <NLink path="/#">Home</NLink>
             <NLink path="/#about">about</NLink>
             <NLink path="/#massages">massages</NLink>
             <NLink path="/#contact">contact</NLink>

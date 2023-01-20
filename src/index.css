@@ -6,4 +6,9 @@ body {
 }
 
 @tailwind components;
+
+.nav-active {
+    @apply underline underline-offset-4 decoration-2 text-green-800 transition-all ease-in duration-100;
+}
+
 @tailwind utilities;

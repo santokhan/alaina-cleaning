@@ -5,6 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./views/Home";
 import BookOnline from "./views/BookOnline";
+import YoungLiving from "./views/YoungLiving";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,6 +14,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/appointments" element={<BookOnline />}></Route>
+        <Route path="/living" element={<YoungLiving />}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

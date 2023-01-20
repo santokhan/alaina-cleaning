@@ -10,7 +10,7 @@ export default function SercviceArea({ children }) {
           <div className="w-auto">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6615.3944198491445!2d149.99984201419164!3d-34.00031035864894!3m2!1i1024!2i768!4f13.1!5e0!3m2!1snl!2sus!4v1674215620532!5m2!1snl!2sus"
-              className="h-96 aspect-square rounded-full hover:rounded-xl border-2 border-green-500 transition-all ease-in duration-300"
+              className="h-[360px] aspect-square rounded-full hover:rounded-xl border-2 border-green-500 transition-all ease-in duration-300"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="map"

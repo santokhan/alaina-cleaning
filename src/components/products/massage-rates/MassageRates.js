@@ -34,7 +34,7 @@ export default function MassageRates({ myRef }) {
               <CImg src="images/massages/card/sport.png" />
               <CTitle>sports</CTitle>
               <CDes>Travel 15 km 10,-</CDes>
-              <Price price={65} time={65}>
+              <Price price={65} time={60}>
                 <BookNow to=""></BookNow>
               </Price>
             </PCard>
@@ -42,7 +42,7 @@ export default function MassageRates({ myRef }) {
               <CImg src="images/massages/card/shiatsu.png" />
               <CTitle>shiatsu</CTitle>
               <CDes>2 x per mnd. 90,-</CDes>
-              <Price price={65} time={65}>
+              <Price price={65} time={60}>
                 <BookNow to=""></BookNow>
               </Price>
             </PCard>
@@ -50,7 +50,7 @@ export default function MassageRates({ myRef }) {
               <CImg src="images/massages/card/relaxation.png" />
               <CTitle>relaxation</CTitle>
               <CDes>2 x per mnd. 130,-</CDes>
-              <Price price={65} time={65}>
+              <Price price={65} time={60}>
                 <BookNow to=""></BookNow>
               </Price>
             </PCard>
@@ -58,14 +58,14 @@ export default function MassageRates({ myRef }) {
               <CImg src="images/massages/card/chair.png" />
               <CTitle>chair</CTitle>
               <CDes>2 x per mnd. 50,-</CDes>
-              <Price price={65} time={65}>
+              <Price price={65} time={60}>
                 <BookNow to=""></BookNow>
               </Price>
             </PCard>
             <PCard category={2}>
               <CImg src="images/massages/card/sound-bowl.png" />
               <CTitle>sound-bowl</CTitle>
-              <Price price={65} time={65}>
+              <Price price={65} time={60}>
                 <BookNow to=""></BookNow>
               </Price>
             </PCard>
@@ -73,7 +73,7 @@ export default function MassageRates({ myRef }) {
               <CImg src="images/massages/card/houston.png" />
               <CTitle>Hot Stone</CTitle>
               <CDes>2 x per mnd. 130,-</CDes>
-              <Price price={65} time={65}>
+              <Price price={65} time={60}>
                 <BookNow to=""></BookNow>
               </Price>
             </PCard>
