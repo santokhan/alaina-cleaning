@@ -82,23 +82,19 @@ html {
 }
 
 .slide-1 {
-    background-image: url("/images/slider/576/port.png");
+    background-image: url("/images/slider/576/1.jpg");
 }
 
 .slide-2 {
-    background-image: url("/images/slider/576/excavator.png");
+    background-image: url("/images/slider/576/2.jpg");
 }
 
 .slide-3 {
-    background-image: url("/images/slider/576/industrial.png");
+    background-image: url("/images/slider/576/3.jpg");
 }
 
 .slide-4 {
-    background-image: url("/images/slider/576/workshop.png");
-}
-
-.slide-5 {
-    background-image: url("/images/slider/576/agri.png");
+    background-image: url("/images/slider/576/4.jpg");
 }
 
 @media (min-width: 576px) {
