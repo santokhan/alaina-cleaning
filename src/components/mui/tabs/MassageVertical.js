@@ -95,6 +95,7 @@ export default function VerticalTabs() {
                     sm: "center",
                     md: "center",
                     lg: "start",
+                    marginBottom: "1rem",
                   },
                   columnGap: ".75rem",
                   width: { xs: 1, lg: 300 },

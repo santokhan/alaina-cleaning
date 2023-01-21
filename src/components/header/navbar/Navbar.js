@@ -15,10 +15,9 @@ export default function Navbar({ children }) {
       <div className="h-full flex flex-wrap items-center justify-between max-w-screen-xl mx-auto">
         <Logo />
         <div className="flex items-center xl:order-2">
-          <a
-            type="button"
+          <Link
             className="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-900/25 font-medium rounded-lg text-sm px-4 py-2 xl:px-4 xl:py-2.5 focus:outline-none capitalize flex items-center gap-2"
-            href="/appointments"
+            to="/appointments"
           >
             <svg
               width="14"
@@ -33,7 +32,7 @@ export default function Navbar({ children }) {
               ></path>
             </svg>
             <span className="">Book Now</span>
-          </a>
+          </Link>
           <button
             onClick={handleDropdown}
             type="button"
