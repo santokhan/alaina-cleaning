@@ -62,7 +62,7 @@ export default function MassageRates({ myRef }) {
                 <BookNow to="/appointments"></BookNow>
               </Price>
             </PCard>
-            <PCard category={2}>
+            {/* <PCard category={2}>
               <CImg src="images/massages/card/sound-bowl.png" />
               <CTitle>sound-bowl</CTitle>
               <Price price={65} time={60}>
@@ -76,7 +76,7 @@ export default function MassageRates({ myRef }) {
               <Price price={65} time={60}>
                 <BookNow to="/appointments"></BookNow>
               </Price>
-            </PCard>
+            </PCard> */}
           </PMain>
         </PLayout>
       </div>

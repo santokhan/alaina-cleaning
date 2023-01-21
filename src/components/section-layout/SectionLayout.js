@@ -20,9 +20,11 @@ export function SHeader({ children }) {
 export function SIcon({ children }) {
   return <div className="flex justify-center">{children}</div>;
 }
-export function STitle({ children }) {
+export function STitle({ children, className }) {
   return (
-    <div className="text-2xl font-bold uppercase playfair">{children}</div>
+    <div className={"text-2xl font-bold uppercase playfair " + className}>
+      {children}
+    </div>
   );
 }
 export function SDes({ children }) {

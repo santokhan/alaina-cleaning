@@ -11,7 +11,6 @@ export default function InputText() {
       sx={{
         "& .MuiTextField-root": {
           m: 1,
-          width: { xs: 246, sm: 506 },
         },
       }}
       noValidate
@@ -19,10 +18,10 @@ export default function InputText() {
     >
       <div>
         <TextField
-          id="outlined-multiline-static"
-          label="Multiline"
+          label="Message"
           multiline
           rows={4}
+          sx={{ width: 320 }}
           defaultValue={data.message}
           onChange={(e) => {
             handleData({ ...data, message: e.target.value });

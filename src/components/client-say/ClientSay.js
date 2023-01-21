@@ -24,7 +24,7 @@ export default function ClientSay({ children }) {
           want to say, that without my afterwork Friday massage sessions here,
           my productivity would've been so much lower...
         </div>
-        <div className="flex justify-center">Lara Gupta</div>
+        <div className="flex justify-center text-xl">Lara Gupta</div>
       </SLayout>
     </div>
   );

@@ -7,7 +7,7 @@ export default function TabPanel1() {
   return (
     <Row>
       <Col>
-        <Image src="/images/tabs/chair.webp" />
+        <Image src="/images/tabs/chair.jpg" />
       </Col>
       <Col>
         <Box>

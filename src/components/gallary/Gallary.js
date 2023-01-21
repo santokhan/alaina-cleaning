@@ -22,13 +22,13 @@ export default function Gallary() {
                 onClick={() => {
                   setsrc(i + 1);
                 }}
-                className="w-[372px] bg-white shadow-xl hover:scale-105 transition-all duration-200 ease-out"
+                className="w-[372px] bg-white hover:scale-105 transition-all duration-200 ease-out"
                 key={`/images/other/${i + 1}.jpg`}
               >
                 <img
                   src={`/images/other/${i + 1}.jpg`}
                   alt="products"
-                  className="w-[372px] h-[372px] object-cover"
+                  className="w-[372px] h-[372px] object-cover rounded-xl shadow-xl "
                 />
               </button>
             );

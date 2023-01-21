@@ -13,6 +13,17 @@ import WhatWeProvide from "../components/what-we-provide/WhatWeProvide";
 import ClientSay from "../components/client-say/ClientSay";
 import Gallery from "../components/mui/gallery/Gallery";
 import SercviceArea from "../components/service-area/ServiceArea";
+import PageLoader from "../components/page-loader/PageLoader";
+
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { green } from "@mui/material/colors";
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: green[900],
+    },
+  },
+});
 
 export default function Home() {
   const myRef = useRef(null);
@@ -21,19 +32,22 @@ export default function Home() {
   }
 
   return (
-    <div className="text-light-sky relative bg-gray-50">
-      <Header></Header>
-      <SwiperSlider startScroll={startScroll}></SwiperSlider>
-      <About></About>
-      <MassageVertical></MassageVertical>
-      <WhyChooseUs></WhyChooseUs>
-      <WhatWeProvide></WhatWeProvide>
-      <MassageRates myRef={myRef}></MassageRates>
-      <ClientSay></ClientSay>
-      <Gallary></Gallary>
-      <ContactFrom></ContactFrom>
-      <SercviceArea></SercviceArea>
-      <Footer></Footer>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="text-light-sky relative bg-gray-50">
+        <PageLoader></PageLoader>
+        <Header></Header>
+        <SwiperSlider startScroll={startScroll}></SwiperSlider>
+        <About></About>
+        <MassageVertical></MassageVertical>
+        <WhyChooseUs></WhyChooseUs>
+        <WhatWeProvide></WhatWeProvide>
+        <MassageRates myRef={myRef}></MassageRates>
+        <ClientSay></ClientSay>
+        <Gallary></Gallary>
+        <ContactFrom></ContactFrom>
+        <SercviceArea></SercviceArea>
+        <Footer></Footer>
+      </div>
+    </ThemeProvider>
   );
 }

@@ -10,7 +10,7 @@ export default function InputEmail() {
     <Box
       component="div"
       sx={{
-        "& .MuiTextField-root": { m: 1, width: 246 },
+        "& .MuiTextField-root": { m: 1, width: 320 },
       }}
       noValidate
       autoComplete="off"

@@ -321,3 +321,22 @@ html {
     background-size: cover;
     background-position: center;
 }
+
+/* slide-up */
+.slide-up {
+    animation-name: slide-up-loader;
+    animation-duration: 750ms;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-up-loader {
+    50% {}
+
+    100% {
+        opacity: 0;
+        transform: scaleY(1);
+        transform: translateY(-100%);
+    }
+}

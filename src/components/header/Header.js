@@ -40,8 +40,8 @@ export default function Header({ children }) {
       <header
         className={
           scrollY > H
-            ? "w-full h-14 lg:h-16 flex justify-between items-center px-4 shadow z-[100] bg-white/75 backdrop-blur-sm  fixed drop-navbar"
-            : "w-full h-16 lg:h-24 flex justify-between items-center px-4 shadow z-[100] bg-white/75 backdrop-blur-sm absolute"
+            ? "w-full h-14 lg:h-16 flex justify-between items-center px-4 shadow z-[100] b-white/75 bg-green-50/75 backdrop-blur-sm  fixed drop-navbar"
+            : "w-full h-16 lg:h-24 flex justify-between items-center px-4 shadow z-[100] b-white/75 bg-green-50/75 backdrop-blur-sm absolute"
         }
       >
         <Navbar></Navbar>

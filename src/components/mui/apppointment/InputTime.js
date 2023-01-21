@@ -3,32 +3,21 @@ import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
-import Select, { SelectChangeEvent } from "@mui/material/Select";
+import Select from "@mui/material/Select";
 import { AppointmentContext } from "../../../context/AppointmentContext";
 
-export default function BasicSelect() {
-  const [age, setAge] = React.useState("");
-
+export default function InputTime() {
   const { data, handleData } = useContext(AppointmentContext);
 
-  const handleChange = (event) => {
-    setAge(event.target.value);
-
-    handleData({ ...data, time: age });
+  const handleChange = (e) => {
+    handleData({ ...data, time: e.target.value });
   };
 
   return (
-    <Box sx={{ minWidth: 246 }}>
+    <Box sx={{ minWidth: 320, m: 1 }}>
       <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">Time</InputLabel>
-        <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          value={data.time}
-          label="Time"
-          required
-          onChange={handleChange}
-        >
+        <InputLabel>Time</InputLabel>
+        <Select value={data.time} label="Time" required onChange={handleChange}>
           <MenuItem value="10.00">10.00</MenuItem>
           <MenuItem value="11.00">11.00</MenuItem>
           <MenuItem value="12.00">12.00</MenuItem>

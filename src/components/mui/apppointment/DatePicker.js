@@ -27,12 +27,11 @@ export default function MaterialUIPickers() {
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <Box
-        spacing={3}
         sx={{
           display: "flex",
           justifyContent: "center",
           flexWrap: "wrap",
-          gap: "1rem",
+          width: 320,
         }}
       >
         <DesktopDatePicker
@@ -40,8 +39,9 @@ export default function MaterialUIPickers() {
           inputFormat="MM/DD/YYYY"
           value={value}
           onChange={handleChange}
-          sx={{ width: 220 }}
-          renderInput={(params) => <TextField {...params} required />}
+          renderInput={(params) => (
+            <TextField {...params} required sx={{ width: 320, my: 1 }} />
+          )}
         />
         {/* <TimePicker
           label="Available Time"
@@ -52,7 +52,6 @@ export default function MaterialUIPickers() {
           sx={{ width: 220 }}
           renderInput={(params) => <TextField {...params} />}
         /> */}
-        <InputTime></InputTime>
       </Box>
     </LocalizationProvider>
   );

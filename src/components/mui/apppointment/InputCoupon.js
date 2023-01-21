@@ -9,7 +9,7 @@ export default function InputCoupon() {
     <Box
       component="div"
       sx={{
-        "& .MuiTextField-root": { m: 1, width: 246 },
+        "& .MuiTextField-root": { m: 1 },
       }}
       noValidate
       autoComplete="off"
@@ -20,6 +20,7 @@ export default function InputCoupon() {
           type="text"
           label="Coupon"
           defaultValue=""
+          sx={{ width: 320 }}
           onChange={(e) => {
             handleData({ ...data, coupon: e.target.value });
           }}

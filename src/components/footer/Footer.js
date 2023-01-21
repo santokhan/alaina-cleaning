@@ -54,13 +54,14 @@ export default function Footer() {
                 className="flex gap-2 items-center hover:underline hover:underline-offset-4 hover:decoration-2 hover:translate-x-2 transition-all ease-in"
               >
                 <Envelope />
-                jandatkan@gmail.com
+                info@massagejanmorks.nl
               </a>
             </li>
-            <li className="py-2 flex justify-start items-start gap-2">
+            {/* <li className="py-2 flex justify-start items-start gap-2">
               <Map />
-              Arnhemsestraat 60 <br /> 6974AK Leuvenheim
-            </li>
+              Kanangra, Nieuw-Zuid-Wales
+              <br /> 2787, Australië{" "}
+            </li> */}
           </NL>
         </div>
       </div>
