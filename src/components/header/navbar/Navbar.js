@@ -36,7 +36,7 @@ export default function Navbar({ children }) {
           <button
             onClick={handleDropdown}
             type="button"
-            className="inline-flex items-center p-2 ml-1 text-base text-green-700 rounded-lg xl:hidden hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-200"
+            className="inline-flex items-center px-2 py-2 ml-2 text-base text-green-700 rounded-lg xl:hidden hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-200"
           >
             <span className="sr-only">Open main menu</span>
             <svg

@@ -39,7 +39,7 @@ function TabPanel(props) {
       {...other}
       className="w-full"
     >
-      {value === index && <Box sx={{ px: 3 }}>{children}</Box>}
+      {value === index && <Box sx={{ px: { md: 3 } }}>{children}</Box>}
     </div>
   );
 }
@@ -75,7 +75,7 @@ export default function VerticalTabs() {
                 flexGrow: 1,
                 bgcolor: "background.paper",
                 display: "flex",
-                flexWrap: { xs: "wrap", lg: "nowrap" },
+                flexWrap: { xs: "wrap", md: "nowrap" },
                 backgroundColor: "transparent",
               }}
             >
@@ -93,12 +93,12 @@ export default function VerticalTabs() {
                   alignItems: {
                     xs: "center",
                     sm: "center",
-                    md: "center",
+                    md: "start",
                     lg: "start",
                     marginBottom: "1rem",
                   },
                   columnGap: ".75rem",
-                  width: { xs: 1, lg: 300 },
+                  width: { xs: 1, md: 300 },
                   backgroundColor: "transparent",
                 }}
               >
