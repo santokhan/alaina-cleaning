@@ -1,12 +1,15 @@
 import React, { useContext } from "react";
 import { AgriculturalContext } from "../../../context/tabs/AgriculturalContext";
 
-export default function PCard({ children, category }) {
+export default function PCard({ children, category, id }) {
   const { tab } = useContext(AgriculturalContext);
 
   if (tab === 1 || tab === category) {
     return (
-      <div className="w-[372px] bg-white shadow-xl hover:scale-105 transition-all duration-200 ease-out rounded-xl overflow-hidden">
+      <div
+        className="w-[372px] bg-white shadow-xl hover:scale-105 transition-all duration-200 ease-out rounded-xl overflow-hidden"
+        id={id}
+      >
         {children}
       </div>
     );

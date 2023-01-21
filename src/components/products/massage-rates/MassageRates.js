@@ -30,20 +30,20 @@ export default function MassageRates({ myRef }) {
             <Tab id={4}>120 minuite</Tab>
           </PTabs> */}
           <PMain>
-            <PCard category={4}>
+            <PCard category={4} id="sports">
               <CImg src="images/massages/card/sport.png" />
               <CTitle>sports</CTitle>
               <CDes>Travel 15 km 10,-</CDes>
               <Price price={65} time={60}>
-                <BookNow to=""></BookNow>
+                <BookNow to="/appointments"></BookNow>
               </Price>
             </PCard>
-            <PCard category={4}>
+            <PCard category={4} id="shiatsu">
               <CImg src="images/massages/card/shiatsu.png" />
               <CTitle>shiatsu</CTitle>
               <CDes>2 x per mnd. 90,-</CDes>
               <Price price={65} time={60}>
-                <BookNow to=""></BookNow>
+                <BookNow to="/appointments"></BookNow>
               </Price>
             </PCard>
             <PCard category={2}>
@@ -51,30 +51,30 @@ export default function MassageRates({ myRef }) {
               <CTitle>relaxation</CTitle>
               <CDes>2 x per mnd. 130,-</CDes>
               <Price price={65} time={60}>
-                <BookNow to=""></BookNow>
+                <BookNow to="/appointments"></BookNow>
               </Price>
             </PCard>
-            <PCard category={2}>
+            <PCard category={2} id="chair">
               <CImg src="images/massages/card/chair.png" />
               <CTitle>chair</CTitle>
               <CDes>2 x per mnd. 50,-</CDes>
               <Price price={65} time={60}>
-                <BookNow to=""></BookNow>
+                <BookNow to="/appointments"></BookNow>
               </Price>
             </PCard>
             <PCard category={2}>
               <CImg src="images/massages/card/sound-bowl.png" />
               <CTitle>sound-bowl</CTitle>
               <Price price={65} time={60}>
-                <BookNow to=""></BookNow>
+                <BookNow to="/appointments"></BookNow>
               </Price>
             </PCard>
-            <PCard category={2}>
+            <PCard category={2} id="hotstone">
               <CImg src="images/massages/card/houston.png" />
               <CTitle>Hot Stone</CTitle>
               <CDes>2 x per mnd. 130,-</CDes>
               <Price price={65} time={60}>
-                <BookNow to=""></BookNow>
+                <BookNow to="/appointments"></BookNow>
               </Price>
             </PCard>
           </PMain>

@@ -1,11 +1,14 @@
-import * as React from "react";
+import React, { useContext } from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
+import { AppointmentContext } from "../../../context/AppointmentContext";
 
 export default function InputEmail() {
+  const { data, handleData } = useContext(AppointmentContext);
+
   return (
     <Box
-      component="form"
+      component="div"
       sx={{
         "& .MuiTextField-root": { m: 1, width: 246 },
       }}
@@ -16,8 +19,12 @@ export default function InputEmail() {
         <TextField
           required
           id="email"
+          type="email"
           label="Email"
-          defaultValue="doe@janmorks.nl"
+          defaultValue={data.email}
+          onChange={(e) => {
+            handleData({ ...data, email: e.target.value });
+          }}
         />
       </div>
     </Box>

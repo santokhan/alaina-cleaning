@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState, useContext } from "react";
 import dayjs from "dayjs";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
@@ -9,12 +9,19 @@ import { DateTimePicker } from "@mui/x-date-pickers/DateTimePicker";
 import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker";
 import { MobileDatePicker } from "@mui/x-date-pickers/MobileDatePicker";
 import { Box } from "@mui/system";
+import { AppointmentContext } from "../../../context/AppointmentContext";
+import InputTime from "./InputTime";
 
 export default function MaterialUIPickers() {
-  const [value, setValue] = React.useState(dayjs("2023-01-10T10:30"));
+  const { data, handleData } = useContext(AppointmentContext);
+
+  const [value, setValue] = useState(dayjs("2023-01-10"));
+  // const [value, setValue] = useState({});
 
   const handleChange = (newValue) => {
     setValue(newValue);
+
+    handleData({ ...data, date: value });
   };
 
   return (
@@ -34,9 +41,9 @@ export default function MaterialUIPickers() {
           value={value}
           onChange={handleChange}
           sx={{ width: 220 }}
-          renderInput={(params) => <TextField {...params} />}
+          renderInput={(params) => <TextField {...params} required />}
         />
-        <TimePicker
+        {/* <TimePicker
           label="Available Time"
           value={value}
           onChange={handleChange}
@@ -44,7 +51,8 @@ export default function MaterialUIPickers() {
           maxTime={dayjs("2023-01-10T16:30")}
           sx={{ width: 220 }}
           renderInput={(params) => <TextField {...params} />}
-        />
+        /> */}
+        <InputTime></InputTime>
       </Box>
     </LocalizationProvider>
   );

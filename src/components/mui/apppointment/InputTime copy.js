@@ -7,9 +7,8 @@ import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { AppointmentContext } from "../../../context/AppointmentContext";
 
 export default function BasicSelect() {
-  const [age, setAge] = React.useState("");
-
   const { data, handleData } = useContext(AppointmentContext);
+  const [age, setAge] = React.useState("");
 
   const handleChange = (event) => {
     setAge(event.target.value);
@@ -18,24 +17,20 @@ export default function BasicSelect() {
   };
 
   return (
-    <Box sx={{ minWidth: 246 }}>
+    <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">Time</InputLabel>
+        <InputLabel id="demo-simple-select-label">Age</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-          value={data.time}
-          label="Time"
-          required
+          value={age}
+          label="Age"
           onChange={handleChange}
         >
-          <MenuItem value="10.00">10.00</MenuItem>
-          <MenuItem value="11.00">11.00</MenuItem>
-          <MenuItem value="12.00">12.00</MenuItem>
-          <MenuItem value="13.00<">13.00</MenuItem>
-          <MenuItem value="14.00<">14.00</MenuItem>
-          <MenuItem value="15.00">15.00</MenuItem>
-          <MenuItem value="16.00">16.00</MenuItem>
+          <MenuItem value="10.30">10.30 am</MenuItem>
+          <MenuItem value="10.30">11.00 am</MenuItem>
+          <MenuItem value="10.30">10.30 am</MenuItem>
+          <MenuItem value="10.30">10.30 am</MenuItem>
         </Select>
       </FormControl>
     </Box>

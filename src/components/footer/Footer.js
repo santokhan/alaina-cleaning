@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import LogoFooter from "../header/logo/LogoFooter";
 import Social from "../social/Social";
 import React from "react";
+import NavActive from "../header/navbar/NavActive";
 
 export default function Footer() {
   return (
@@ -29,10 +30,10 @@ export default function Footer() {
         <div className="w-auto py-2 lg:py-0 mr-12">
           <div className="uppercase font-bold mb-2">Massages</div>
           <NL>
-            <NLink path="/#massages">sport</NLink>
-            <NLink path="/#massages">shiatsu</NLink>
-            <NLink path="/#massages">chair</NLink>
-            <NLink path="/#massages">hot stone</NLink>
+            <NLink path="/#sports">sports</NLink>
+            <NLink path="/#shiatsu">shiatsu</NLink>
+            <NLink path="/#chair">chair</NLink>
+            <NLink path="/#hotstone">hot stone</NLink>
           </NL>
         </div>
         <div className="w-full sm:w-1/2 lg:w-3/12 py-2 lg:py-0">
@@ -67,6 +68,10 @@ export default function Footer() {
     </footer>
   );
 }
+
+const linkClass =
+  "hover:underline hover:underline-offset-4 hover:decoration-2 text-raisin font-medium  hover:translate-x-2 transition-all ease-in block py-2 ";
+
 export function NL({ children }) {
   return <ul className="flex flex-col items-start">{children}</ul>;
 }
@@ -74,34 +79,16 @@ export function NavItem({ children }) {
   return <li className="h-full relative capitalize">{children}</li>;
 }
 export function NavLink({ children, path }) {
-  const { pathname } = useLocation();
-
   return (
-    <a
-      href={path}
-      className={
-        pathname === path
-          ? "hover:underline hover:underline-offset-4 hover:decoration-2 text-raisin font-medium  hover:translate-x-2 transition-all ease-in block py-2"
-          : "hover:underline hover:underline-offset-4 hover:decoration-2 text-raisin font-medium  hover:translate-x-2 transition-all ease-in block py-2"
-      }
-    >
+    <a href={path} className={linkClass + NavActive(path)}>
       {children}
     </a>
   );
 }
 export function NLink({ children, path }) {
-  const { pathname } = useLocation();
-
   return (
     <li className="h-full relative capitalize">
-      <a
-        href={path}
-        className={
-          pathname === path
-            ? "hover:underline hover:underline-offset-4 hover:decoration-2 text-raisin font-medium  hover:translate-x-2 transition-all ease-in block py-2"
-            : "hover:underline hover:underline-offset-4 hover:decoration-2 text-raisin font-medium  hover:translate-x-2 transition-all ease-in block py-2"
-        }
-      >
+      <a href={path} className={linkClass + NavActive(path)}>
         {children}
       </a>
     </li>

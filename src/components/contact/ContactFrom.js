@@ -31,7 +31,7 @@ export default function ContactFrom() {
 export function Form() {
   return (
     <form>
-      <div className="flex flex-wrap lg:flex-nowrap lg:gap-8">
+      <div className="flex flex-wrap sm:flex-nowrap sm:gap-8">
         <div className="w-full mb-8">
           <label
             htmlFor="firstName"
@@ -63,7 +63,7 @@ export function Form() {
           />
         </div>
       </div>
-      <div className="flex flex-wrap lg:flex-nowrap lg:gap-8">
+      <div className="flex flex-wrap sm:flex-nowrap sm:gap-8">
         <div className="w-full mb-8">
           <label
             htmlFor="email"

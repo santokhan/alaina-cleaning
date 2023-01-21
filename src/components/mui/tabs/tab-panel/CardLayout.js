@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 
-export function Row({ children }) {
+export function Row({ children, id }) {
   return (
-    <div className="w-full bg-white rounded-[2rem] p-3 shadow-2xl shadow-gray-100 hover:-translate-y-1 transition-all ease-out duration-200">
+    <div
+      className="w-full bg-white rounded-[2rem] p-3 shadow-2xl shadow-gray-100 hover:-translate-y-1 transition-all ease-out duration-200"
+      id={id}
+    >
       {children}
     </div>
   );

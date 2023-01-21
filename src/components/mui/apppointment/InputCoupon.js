@@ -2,30 +2,26 @@ import React, { useContext } from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { AppointmentContext } from "../../../context/AppointmentContext";
-
-export default function InputText() {
+export default function InputCoupon() {
   const { data, handleData } = useContext(AppointmentContext);
+
   return (
     <Box
       component="div"
       sx={{
-        "& .MuiTextField-root": {
-          m: 1,
-          width: { xs: 246, sm: 506 },
-        },
+        "& .MuiTextField-root": { m: 1, width: 246 },
       }}
       noValidate
       autoComplete="off"
     >
       <div>
         <TextField
-          id="outlined-multiline-static"
-          label="Multiline"
-          multiline
-          rows={4}
-          defaultValue={data.message}
+          id="coupon"
+          type="text"
+          label="Coupon"
+          defaultValue=""
           onChange={(e) => {
-            handleData({ ...data, message: e.target.value });
+            handleData({ ...data, coupon: e.target.value });
           }}
         />
       </div>
