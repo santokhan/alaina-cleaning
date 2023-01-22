@@ -15,9 +15,7 @@ import InputTime from "./InputTime";
 export default function MaterialUIPickers() {
   const { data, handleData } = useContext(AppointmentContext);
 
-  const [value, setValue] = useState("2023-01-10");
-  // const [value, setValue] = useState({});
-
+  const [value, setValue] = useState(dayjs(new Date()));
   const handleChange = (newValue) => {
     setValue(newValue);
 
@@ -46,6 +44,7 @@ export default function MaterialUIPickers() {
       >
         <DesktopDatePicker
           label="Appointment Date"
+          minDate={new Date()}
           inputFormat="MM/DD/YYYY"
           value={value}
           onChange={handleChange}
@@ -56,4 +55,9 @@ export default function MaterialUIPickers() {
       </Box>
     </LocalizationProvider>
   );
+}
+
+export function minDate() {
+  const d = new Date();
+  return `${d.getMonth() + 1}-${d.getDate()}-${d.getFullYear()}`;
 }
