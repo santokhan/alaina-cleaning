@@ -1,24 +1,28 @@
-import React, { useState, useContext } from "react";
+// React
+import React, { useState, useContext, useEffect } from "react";
+import axios from "axios";
+
+// Mui
 import dayjs from "dayjs";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import { TimePicker } from "@mui/x-date-pickers/TimePicker";
-import { DateTimePicker } from "@mui/x-date-pickers/DateTimePicker";
 import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker";
-import { MobileDatePicker } from "@mui/x-date-pickers/MobileDatePicker";
 import { Box } from "@mui/system";
-import { AppointmentContext } from "../../../context/AppointmentContext";
-import InputTime from "./InputTime";
 
-export default function MaterialUIPickers() {
+// Context
+import { AppointmentContext } from "../../../context/AppointmentContext";
+import GetTimeFromAPI from "./GetTImes";
+
+export function GetDateFromAPI() {}
+
+export default function MaterialUIPickers({ handleTimes }) {
   const { data, handleData } = useContext(AppointmentContext);
 
   const [value, setValue] = useState(dayjs(new Date()));
-  const handleChange = (newValue) => {
-    setValue(newValue);
 
+  const handleChange = (newValue) => {
     // Date object to string on change
     let newDate = new Date(newValue);
     newDate = [
@@ -27,10 +31,30 @@ export default function MaterialUIPickers() {
       newDate.getDate(),
     ];
     newDate = newDate.join("-");
-    console.log({ newDate });
+
+    // setValue(newValue);
+    setValue(newDate);
 
     handleData({ ...data, date: newDate });
   };
+
+  const [date, setdate] = useState("");
+
+  useEffect(() => {
+    // `https://massage-booking.up.railway.app/api/v1/bookings?date=${data.date}`
+    axios
+      .get(
+        `https://massage-booking.up.railway.app/api/v1/bookings?date=2023-08-10`
+      )
+      .then((date) => {
+        setdate(date.data);
+        // console.log(date);
+        // console.log(value);
+
+        // lifting state up
+        handleTimes(date.data);
+      });
+  }, [value]);
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -57,7 +81,4 @@ export default function MaterialUIPickers() {
   );
 }
 
-export function minDate() {
-  const d = new Date();
-  return `${d.getMonth() + 1}-${d.getDate()}-${d.getFullYear()}`;
-}
+export function dataFilter() {}

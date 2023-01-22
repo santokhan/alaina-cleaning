@@ -23,6 +23,12 @@ const steps = ["", "", "", ""];
 export default function HorizontalLinearStepper({ data, handleSubmit }) {
   const [activeStep, setActiveStep] = useState(0);
 
+  // lifting state
+  const [times, settimes] = useState([]);
+  function handleTimes(arr) {
+    settimes(arr);
+  }
+
   const isStepOptional = (step) => {
     return step === 1;
   };
@@ -97,8 +103,8 @@ export default function HorizontalLinearStepper({ data, handleSubmit }) {
             <Box
               sx={{ pt: 8, pb: 6, display: "flex", flexWrap: "wrap", gap: 2 }}
             >
-              <DatePicker></DatePicker>
-              <InputTime></InputTime>
+              <DatePicker handleTimes={handleTimes}></DatePicker>
+              <InputTime times={times}></InputTime>
             </Box>
           )}
           {activeStep === 3 && (

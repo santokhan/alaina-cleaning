@@ -1,4 +1,5 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
+import axios from "axios";
 import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -6,7 +7,7 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import { AppointmentContext } from "../../../context/AppointmentContext";
 
-export default function InputTime() {
+export default function InputTime({ times }) {
   const { data, handleData } = useContext(AppointmentContext);
 
   const handleChange = (e) => {
@@ -22,6 +23,8 @@ export default function InputTime() {
     "14.00",
     "15.00",
     "16.00",
+    "17.00",
+    "18.00",
   ];
 
   return (
@@ -30,7 +33,7 @@ export default function InputTime() {
         <InputLabel>Time</InputLabel>
         <Select value={data.time} label="Time" required onChange={handleChange}>
           {timeArr.map((e, i) => (
-            <MenuItem disabled={timeChecker(e)} value={e} key={i}>
+            <MenuItem disabled={timeChecker(e, times)} value={e} key={i}>
               {e}
             </MenuItem>
           ))}
@@ -40,13 +43,15 @@ export default function InputTime() {
   );
 }
 
-export function timeChecker(value) {
-  let APITimeArray = [
-    { time: "17.00" },
-    { time: "10.00" },
-    { time: "19.00" },
-    { time: "18.00" },
-  ];
+export function timeChecker(value, times) {
+  console.log(times.data);
 
-  return APITimeArray.some((e) => e.time === value);
+  if (typeof times.data === "object") {
+    if (times.length > 0) {
+      let APITimeArray = times.data || [];
+
+      return APITimeArray.some((e) => e.time === value);
+    } else {
+    }
+  }
 }
