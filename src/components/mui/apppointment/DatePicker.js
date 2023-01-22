@@ -15,7 +15,7 @@ import InputTime from "./InputTime";
 export default function MaterialUIPickers() {
   const { data, handleData } = useContext(AppointmentContext);
 
-  const [value, setValue] = useState(dayjs("2023-01-10"));
+  const [value, setValue] = useState("2023-01-10");
   // const [value, setValue] = useState({});
 
   const handleChange = (newValue) => {

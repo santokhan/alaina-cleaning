@@ -19,20 +19,25 @@ import InputTime from "./InputTime";
 // mui
 const steps = ["", "", "", ""];
 
-export default function HorizontalLinearStepper() {
+export default function HorizontalLinearStepper({ data, handleSubmit }) {
   const [activeStep, setActiveStep] = useState(0);
-  const [skipped, setSkipped] = useState(new Set());
 
   const isStepOptional = (step) => {
     return step === 1;
+  };
+
+  const handleBack = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
 
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  const submit = (e) => {
+    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+
+    handleSubmit();
   };
 
   const handleReset = () => {
@@ -103,24 +108,50 @@ export default function HorizontalLinearStepper() {
           )}
 
           {/* Buttons */}
-          <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              pt: 2,
+            }}
+          >
             <Button
               color="inherit"
               disabled={activeStep === 0}
               onClick={handleBack}
-              sx={{ mr: 1 }}
             >
               Back
             </Button>
-            <Box sx={{ flex: "1 1 auto" }} />
 
-            {activeStep === steps.length - 1 ? (
-              <Button onClick={handleNext} type="submit">
-                Submit
+            {activeStep === 0 && (
+              <Button
+                onClick={handleNext}
+                disabled={data.type && data.name ? false : true}
+              >
+                Next
               </Button>
+            )}
+            {activeStep === 1 && (
+              <Button
+                onClick={handleNext}
+                disabled={data.email && data.phone ? false : true}
+              >
+                Next
+              </Button>
+            )}
+            {activeStep === 2 && (
+              <Button onClick={handleNext} disabled={data.date ? false : true}>
+                Next
+              </Button>
+            )}
+            {activeStep === 3 && <Button onClick={submit}>Submit</Button>}
+
+            {/* {activeStep === steps.length - 1 ? (
+              <Button onClick={submit}>Submit</Button>
             ) : (
               <Button onClick={handleNext}>Next</Button>
-            )}
+            )} */}
           </Box>
         </>
       )}

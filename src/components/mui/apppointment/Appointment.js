@@ -28,7 +28,7 @@ export default function Appointments() {
     setdata(data);
   }
 
-  function handleSubmit(data) {
+  function handleSubmit() {
     console.log(data);
 
     // axios.post("url", data);
@@ -41,12 +41,12 @@ export default function Appointments() {
           return (
             <form
               className="px-5 lg:py-5 bg-white rounded"
-              onSubmit={(e) => {
-                e.preventDefault();
-                handleSubmit(data);
-              }}
+              onSubmit={handleSubmit}
             >
-              <HorizontalLinearStepper></HorizontalLinearStepper>
+              <HorizontalLinearStepper
+                data={data}
+                handleSubmit={handleSubmit}
+              ></HorizontalLinearStepper>
             </form>
           );
         }}
@@ -66,6 +66,7 @@ export function FormStep1() {
     </>
   );
 }
+
 export function FormStep2() {
   return (
     <>
@@ -77,6 +78,7 @@ export function FormStep2() {
     </>
   );
 }
+
 export function FormStep3() {
   return (
     <>
@@ -88,6 +90,7 @@ export function FormStep3() {
     </>
   );
 }
+
 export function FormStep4() {
   return (
     <>
@@ -99,6 +102,7 @@ export function FormStep4() {
     </>
   );
 }
+
 export function BBox({ children }) {
   return (
     <div className="w-full flex justify-center px-4 items-center">
@@ -109,6 +113,7 @@ export function BBox({ children }) {
 
 const btnClass =
   "text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-900/25 font-medium rounded-lg text-sm px-4 py-2 xl:px-4 xl:py-2.5 focus:outline-none capitalize flex items-center gap-2";
+
 export function Back() {
   return (
     <button type="button" className={btnClass}>
@@ -117,6 +122,7 @@ export function Back() {
     </button>
   );
 }
+
 export function Next() {
   return (
     <button type="button" className={btnClass}>
@@ -125,6 +131,7 @@ export function Next() {
     </button>
   );
 }
+
 export function SubmitButton() {
   return (
     <div className="flex justify-center lg:justify-start flex-wrap py-2 px-2">
