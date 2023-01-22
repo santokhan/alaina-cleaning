@@ -13,20 +13,40 @@ export default function InputTime() {
     handleData({ ...data, time: e.target.value });
   };
 
+  const timeArr = [
+    "10.00",
+    "11.00",
+    "12.00",
+    "14.00",
+    "13.00",
+    "14.00",
+    "15.00",
+    "16.00",
+  ];
+
   return (
     <Box sx={{ minWidth: 320, m: 1 }}>
       <FormControl fullWidth>
         <InputLabel>Time</InputLabel>
         <Select value={data.time} label="Time" required onChange={handleChange}>
-          <MenuItem value="10.00">10.00</MenuItem>
-          <MenuItem value="11.00">11.00</MenuItem>
-          <MenuItem value="12.00">12.00</MenuItem>
-          <MenuItem value="13.00<">13.00</MenuItem>
-          <MenuItem value="14.00<">14.00</MenuItem>
-          <MenuItem value="15.00">15.00</MenuItem>
-          <MenuItem value="16.00">16.00</MenuItem>
+          {timeArr.map((e, i) => (
+            <MenuItem disabled={timeChecker(e)} value={e} key={i}>
+              {e}
+            </MenuItem>
+          ))}
         </Select>
       </FormControl>
     </Box>
   );
+}
+
+export function timeChecker(value) {
+  let APITimeArray = [
+    { time: "17.00" },
+    { time: "10.00" },
+    { time: "19.00" },
+    { time: "18.00" },
+  ];
+
+  return APITimeArray.some((e) => e.time === value);
 }

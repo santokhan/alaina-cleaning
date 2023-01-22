@@ -21,7 +21,17 @@ export default function MaterialUIPickers() {
   const handleChange = (newValue) => {
     setValue(newValue);
 
-    handleData({ ...data, date: value });
+    // Date object to string on change
+    let newDate = new Date(newValue);
+    newDate = [
+      newDate.getFullYear(),
+      newDate.getMonth() + 1,
+      newDate.getDate(),
+    ];
+    newDate = newDate.join("-");
+    console.log({ newDate });
+
+    handleData({ ...data, date: newDate });
   };
 
   return (
@@ -43,15 +53,6 @@ export default function MaterialUIPickers() {
             <TextField {...params} required sx={{ width: 320, my: 1 }} />
           )}
         />
-        {/* <TimePicker
-          label="Available Time"
-          value={value}
-          onChange={handleChange}
-          minTime={dayjs("2023-01-10T10:30")}
-          maxTime={dayjs("2023-01-10T16:30")}
-          sx={{ width: 220 }}
-          renderInput={(params) => <TextField {...params} />}
-        /> */}
       </Box>
     </LocalizationProvider>
   );
