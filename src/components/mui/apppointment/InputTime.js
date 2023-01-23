@@ -27,22 +27,20 @@ export default function InputTime({ times }) {
     "18.00",
   ];
 
-
-const bookedTime = []
-  times.data.map(time=>
-    {
-      bookedTime.push(time.time)
-    }
+  const bookedTime = []
+  times?.data?.map(time=>
+        bookedTime.push(time.time)
   )
   const availableTime = timeArr.filter(i=> !bookedTime.includes(i));
 
   return (
     <Box sx={{ minWidth: 320, m: 1 }}>
       <FormControl fullWidth>
-        <InputLabel>Time</InputLabel>
+        <InputLabel>Time</InputLabel>    
         <Select value={data.time} label="Time" required onChange={handleChange}>
+          <h1 style={{fontWeight: 'bold', padding: '10px 15px'}}>Available Time</h1>
           {availableTime.map((e, i) => (
-            <MenuItem>
+            <MenuItem value={e} key={i}>
               {e}
             </MenuItem>
           ))}
