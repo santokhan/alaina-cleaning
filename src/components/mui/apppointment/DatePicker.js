@@ -31,20 +31,18 @@ export default function MaterialUIPickers({ handleTimes }) {
       newDate.getDate(),
     ];
     newDate = newDate.join("-");
-
+    console.log(newDate);
     // setValue(newValue);
     setValue(newDate);
-
     handleData({ ...data, date: newDate });
   };
-
   const [date, setdate] = useState("");
 
   useEffect(() => {
     // `https://massage-booking.up.railway.app/api/v1/bookings?date=${data.date}`
     axios
       .get(
-        `https://massage-booking.up.railway.app/api/v1/bookings?date=2023-08-10`
+        `https://massage-booking.up.railway.app/api/v1/bookings?date=${value}`
       )
       .then((date) => {
         setdate(date.data);

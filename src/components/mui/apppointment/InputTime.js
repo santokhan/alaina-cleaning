@@ -27,13 +27,22 @@ export default function InputTime({ times }) {
     "18.00",
   ];
 
+
+const bookedTime = []
+  times.data.map(time=>
+    {
+      bookedTime.push(time.time)
+    }
+  )
+  const availableTime = timeArr.filter(i=> !bookedTime.includes(i));
+
   return (
     <Box sx={{ minWidth: 320, m: 1 }}>
       <FormControl fullWidth>
         <InputLabel>Time</InputLabel>
         <Select value={data.time} label="Time" required onChange={handleChange}>
-          {timeArr.map((e, i) => (
-            <MenuItem disabled={timeChecker(e, times)} value={e} key={i}>
+          {availableTime.map((e, i) => (
+            <MenuItem>
               {e}
             </MenuItem>
           ))}
@@ -43,15 +52,4 @@ export default function InputTime({ times }) {
   );
 }
 
-export function timeChecker(value, times) {
-  console.log(times.data);
 
-  if (typeof times.data === "object") {
-    if (times.length > 0) {
-      let APITimeArray = times.data || [];
-
-      return APITimeArray.some((e) => e.time === value);
-    } else {
-    }
-  }
-}
