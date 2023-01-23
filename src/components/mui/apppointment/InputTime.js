@@ -18,7 +18,7 @@ export default function InputTime({ times }) {
     "10.00",
     "11.00",
     "12.00",
-    "14.00",
+    "09.00",
     "13.00",
     "14.00",
     "15.00",
@@ -47,11 +47,14 @@ export function timeChecker(value, times) {
   console.log(times.data);
 
   if (typeof times.data === "object") {
-    if (times.length > 0) {
-      let APITimeArray = times.data || [];
+    if (times.data.length > 0) {
+      let APITimeArray = times.data;
 
       return APITimeArray.some((e) => e.time === value);
     } else {
+      console.log("times.data.length is not > 0");
     }
+  } else {
+    console.log("times.data isn not an object");
   }
 }

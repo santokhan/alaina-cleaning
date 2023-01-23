@@ -23,6 +23,8 @@ export default function MaterialUIPickers({ handleTimes }) {
   const [value, setValue] = useState(dayjs(new Date()));
 
   const handleChange = (newValue) => {
+    // setValue(newValue);
+
     // Date object to string on change
     let newDate = new Date(newValue);
     newDate = [
@@ -32,7 +34,6 @@ export default function MaterialUIPickers({ handleTimes }) {
     ];
     newDate = newDate.join("-");
 
-    // setValue(newValue);
     setValue(newDate);
 
     handleData({ ...data, date: newDate });
