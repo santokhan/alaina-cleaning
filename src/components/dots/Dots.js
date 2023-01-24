@@ -1,6 +1,6 @@
 export default function Dots({ num = 6 }) {
   return (
-    <div className="absolute left-8 top-60">
+    <div className="hidden lg:block absolute left-8 top-60">
       <svg
         width="201"
         height="144"
