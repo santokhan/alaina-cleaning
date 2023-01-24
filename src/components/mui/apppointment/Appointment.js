@@ -23,7 +23,7 @@ export default function Appointments() {
   function handleSubmit() {
     console.log(data);
 
-    // axios.post("url", data);
+    axios.post("https://massage-booking.up.railway.app/api/v1/bookings", data);
   }
 
   return (

@@ -21,8 +21,8 @@ export default function Footer() {
           <div className="uppercase font-bold mb-2">Sitemap</div>
           <NL>
             <NLink path="/#">Home</NLink>
-            <NLink path="/#about">about</NLink>
-            <NLink path="/#massages">massages</NLink>
+            <NLink path="/about">about</NLink>
+            <NLink path="/massages">massages</NLink>
             <NLink path="/#contact">contact</NLink>
             <NLink path="/#overview">overview</NLink>
           </NL>
@@ -30,10 +30,10 @@ export default function Footer() {
         <div className="w-auto py-2 lg:py-0 mr-12">
           <div className="uppercase font-bold mb-2">Massages</div>
           <NL>
-            <NLink path="/#sports">sports</NLink>
-            <NLink path="/#shiatsu">shiatsu</NLink>
-            <NLink path="/#chair">chair</NLink>
-            <NLink path="/#hotstone">hot stone</NLink>
+            <NLink path="/massages/sports">sports</NLink>
+            <NLink path="/massages/shiatsu">shiatsu</NLink>
+            <NLink path="/massages/chair">chair</NLink>
+            <NLink path="/massages/relaxation">relaxation</NLink>
           </NL>
         </div>
         <div className="w-full sm:w-1/2 lg:w-3/12 py-2 lg:py-0">
@@ -57,11 +57,6 @@ export default function Footer() {
                 info@massagejanmorks.nl
               </a>
             </li>
-            {/* <li className="py-2 flex justify-start items-start gap-2">
-              <Map />
-              Kanangra, Nieuw-Zuid-Wales
-              <br /> 2787, Australië{" "}
-            </li> */}
           </NL>
         </div>
       </div>
@@ -104,7 +99,7 @@ export function Subscribe({ children }) {
           type="email"
           id="email"
           aria-describedby="helper-text-explanation"
-          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-green-500 focus:border-green-500 block w-full px-4 py-3 relative rounded-2xl"
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-green-500 focus:border-green-500 block w-full px-4 py-3 relative rounded-2xl overflow-hidden"
           placeholder="name@massagejanmorks.nl"
         />
         <button

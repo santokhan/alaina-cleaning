@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-export default function BookNow({ to }) {
+export default function BookNow({ to, className }) {
   return (
-    <div className="px-5 pb-5 flex justify-start">
+    <div className={"px-5 pb-5 flex justify-start " + className}>
       <Link
         to={to}
         type="button"

@@ -14,9 +14,15 @@ import ClientSay from "../components/client-say/ClientSay";
 import Gallery from "../components/mui/gallery/Gallery";
 import SercviceArea from "../components/service-area/ServiceArea";
 import PageLoader from "../components/page-loader/PageLoader";
+import Appointments from "../components/mui/apppointment/Appointment";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { green } from "@mui/material/colors";
+import SLayout, {
+  SHeader,
+  SMain,
+  STitle,
+} from "../components/section-layout/SectionLayout";
 const theme = createTheme({
   palette: {
     primary: {
@@ -42,6 +48,14 @@ export default function Home() {
         <WhyChooseUs></WhyChooseUs>
         <WhatWeProvide></WhatWeProvide>
         <MassageRates myRef={myRef}></MassageRates>
+        <SLayout>
+          <SHeader>
+            <STitle>Book an appointments now</STitle>
+          </SHeader>
+          <SMain>
+            <Appointments></Appointments>
+          </SMain>
+        </SLayout>
         <ClientSay></ClientSay>
         <Gallary></Gallary>
         <ContactFrom></ContactFrom>

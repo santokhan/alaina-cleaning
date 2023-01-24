@@ -1,17 +1,19 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import { AgriculturalContext } from "../../../context/tabs/AgriculturalContext";
 
-export default function PCard({ children, category, id }) {
+export default function PCard({ children, category, id, to = "/" }) {
   const { tab } = useContext(AgriculturalContext);
 
   if (tab === 1 || tab === category) {
     return (
-      <div
+      <Link
+        to=""
         className="w-[372px] bg-white shadow-xl hover:scale-105 transition-all duration-200 ease-out rounded-xl overflow-hidden"
         id={id}
       >
         {children}
-      </div>
+      </Link>
     );
   } else {
     return "";
@@ -37,9 +39,9 @@ export function CDes({ children }) {
   return <div className="px-5 pb-4 text-textgray">{children}</div>;
 }
 
-export function Price({ price, time, children }) {
+export function Price({ price, time, children, className }) {
   return (
-    <div className="flex justify-between">
+    <div className={"flex justify-between " + className}>
       <div className="text-green-800 text-3xl font-semibold px-5">
         ${price}/<span className="text-base">{time} minute</span>
       </div>

@@ -7,7 +7,7 @@ export default function TabPanel1() {
   return (
     <Row>
       <Col>
-        <Image src="/images/tabs/shiatsu.png" />
+        <Image src="/images/tabs/shiatsu.jpg" />
       </Col>
       <Col>
         <Box>

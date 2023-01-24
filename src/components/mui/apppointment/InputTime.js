@@ -27,13 +27,21 @@ export default function InputTime({ times }) {
     "18.00",
   ];
 
+  const bookedTime = [];
+  times?.data?.map((time) => bookedTime.push(time.time));
+  let availableTime = timeArr.filter((i) => !bookedTime.includes(i));
+  availableTime.sort();
+
   return (
     <Box sx={{ minWidth: 320, m: 1 }}>
       <FormControl fullWidth>
         <InputLabel>Time</InputLabel>
         <Select value={data.time} label="Time" required onChange={handleChange}>
-          {timeArr.map((e, i) => (
-            <MenuItem disabled={timeChecker(e, times)} value={e} key={i}>
+          <h1 style={{ fontWeight: "bold", padding: "10px 15px" }}>
+            Available Time
+          </h1>
+          {availableTime.map((e, i) => (
+            <MenuItem value={e} key={i}>
               {e}
             </MenuItem>
           ))}
@@ -47,14 +55,11 @@ export function timeChecker(value, times) {
   console.log(times.data);
 
   if (typeof times.data === "object") {
-    if (times.data.length > 0) {
-      let APITimeArray = times.data;
+    if (times.length > 0) {
+      let APITimeArray = times.data || [];
 
       return APITimeArray.some((e) => e.time === value);
     } else {
-      console.log("times.data.length is not > 0");
     }
-  } else {
-    console.log("times.data isn not an object");
   }
 }
