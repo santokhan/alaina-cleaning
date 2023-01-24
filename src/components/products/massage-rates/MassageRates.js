@@ -37,7 +37,7 @@ export default function MassageRates({ myRef }) {
             <PCard category={4} id="shiatsu" to="/massages/shiatsu">
               <CImg src="/images/massages/card/shiatsu.jpg" />
               <CTitle>shiatsu</CTitle>
-              <CDes>2 x per mnd. 90,-</CDes>
+              <CDes>Travel 15 km 10,-</CDes>
               <Price price={65} time={60}>
                 <BookNow to="/appointments"></BookNow>
               </Price>
@@ -45,7 +45,7 @@ export default function MassageRates({ myRef }) {
             <PCard category={2} to="/massages/relaxation">
               <CImg src="/images/massages/card/relaxation.png" />
               <CTitle>relaxation</CTitle>
-              <CDes>2 x per mnd. 130,-</CDes>
+              <CDes>Travel 15 km 10,-</CDes>
               <Price price={65} time={60}>
                 <BookNow to="/appointments"></BookNow>
               </Price>
@@ -53,7 +53,7 @@ export default function MassageRates({ myRef }) {
             <PCard category={2} id="chair" to="/massages/chair">
               <CImg src="/images/massages/card/chair.png" />
               <CTitle>chair</CTitle>
-              <CDes>2 x per mnd. 50,-</CDes>
+              <CDes>Travel 15 km 10,-</CDes>
               <Price price={65} time={60}>
                 <BookNow to="/appointments"></BookNow>
               </Price>

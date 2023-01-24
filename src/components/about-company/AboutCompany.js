@@ -3,7 +3,7 @@ import SLayout, { SDes, SMain, STitle } from "../section-layout/SectionLayout";
 export default function About() {
   return (
     <div id="about">
-      <SLayout>
+      <SLayout className="lg:pb-0 ">
         <SMain>
           <div className="max-w-2xl mx-auto relative w-full overflow-hidden">
             <div className="hidden lg:flex flex-nowrap gap-2 justify-center items-center absolute -right-56 bottom-2 -rotate-90">

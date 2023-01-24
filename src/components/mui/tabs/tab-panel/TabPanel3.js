@@ -14,15 +14,18 @@ export default function TabPanel1() {
           <Title>Chair massage</Title>
           <List>
             <Item>
-              Even uw hoofd voorover te rusten leggen in een Massagestoel
-              kussen, uw armen laten hangen, zucht…even echt loslaten…
+              Just rest your head forward in a massage chair cushion, let your
+              arms hang down, sigh ... really let go ...
             </Item>
             <Item>
-              De meest laagdrempelige massagevorm is de stoelmassage. Hij kan
-              overal naar toe en zit fantastisch. Met drukpuntmassage worden uw
-              bovenlijf, hoofd, handen en armen snel in ontspanning
-              teruggebracht. Er wordt gebruik gemaakt van drukken, wrijven,
-              schudden, kloppen, kneden en meer.
+              The most accessible form of massage is the chair massage. It can
+              go anywhere and is fantastic. With pressure point massage, your
+              upper body, head, hands and arms are quickly returned to
+              relaxation. It uses pressing, rubbing, shaking, tapping, kneading
+              and more.
+            </Item>
+            <Item>
+              Chair massage is also very suitable as a company massage .
             </Item>
             <Item>
               Stoelmassage is ook zeer geschikt als{" "}

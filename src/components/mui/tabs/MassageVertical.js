@@ -55,7 +55,7 @@ export default function VerticalTabs() {
         <SHeader>
           <STitle>Massages</STitle>
           <SDes>
-            Massage is een ervaring met jezelf, gegeven door een ander...
+            Massage is an experience with yourself, given by another...
           </SDes>
         </SHeader>
         <SMain>

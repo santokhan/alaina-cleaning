@@ -1,7 +1,7 @@
 export default function SLayout({ children, className = "" }) {
   return (
     <section className={"relative " + className}>
-      <div className={"py-8 lg:py-16 relative"}>
+      <div className={"py-8 lg:py-16 relative " + className}>
         <div className="max-w-7xl mx-auto p-4">{children}</div>
       </div>
     </section>

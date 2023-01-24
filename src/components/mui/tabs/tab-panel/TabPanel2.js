@@ -11,20 +11,20 @@ export default function TabPanel1() {
       </Col>
       <Col>
         <Box>
-          <Title>Hotstone massage</Title>
+          <Title>Relaxation massage</Title>
           <List>
             <Item>
-              De volle rijke warmte van lavastenen heeft iets magisch. De pure
-              ontlading van stralende warmte omarmt u en voedt u
+              A soft and full stroke glows your skin under neutral or scented
+              oil
             </Item>
             <Item>
-              Deze oorspronkelijk Indiase rituele massage vindt u na haar
-              ontstaan in diverse culturen terug. Lava stenen hebben een hoger
-              metaalgehalte en blijven daardoor warmte uitstralen. Deze warmte
-              blijft voor lange tijd in het lichaam en dit helpt u met
-              ontgiften. In een vloeiende vorm van olie massage met hete en soms
-              koude stenen biedt een goed uitgevoerde massage een unieke
-              ervaring.
+              The relaxation massage is an energetic and subtle massage. Slow
+              soft stroking alternates with tapping, swaying or possibly sound.
+              Discuss in advance which massage pressure you experience as
+              pleasant. You can also indicate preferences for your massage,
+              attention for feet and calves or rather neck and head tension?
+              Slow long strokes bring back the connection with the emotional
+              life.
             </Item>
           </List>
           <DetailsLink to="/meer-over-hotstone-massages">
