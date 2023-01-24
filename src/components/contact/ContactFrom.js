@@ -15,7 +15,7 @@ export default function ContactFrom() {
           <div className="lg:max-w-sm w-full bg-[#3E2093] rounded-2xl text-white flex flex-col relative overflow-hidden">
             <img
               className="w-full h-full object-cover"
-              src="/images/contact.webp"
+              src="/images/contact.jpg"
               alt="contact"
             />
           </div>

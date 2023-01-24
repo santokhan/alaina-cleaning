@@ -43,7 +43,7 @@ export default function MassageRates({ myRef }) {
               </Price>
             </PCard>
             <PCard category={2} to="/massages/relaxation">
-              <CImg src="/images/massages/card/relaxation.png" />
+              <CImg src="/images/massages/card/relax.jpg" />
               <CTitle>relaxation</CTitle>
               <CDes>Travel 15 km 10,-</CDes>
               <Price price={65} time={60}>
