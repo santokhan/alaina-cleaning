@@ -15,6 +15,7 @@ import Gallery from "../components/mui/gallery/Gallery";
 import SercviceArea from "../components/service-area/ServiceArea";
 import PageLoader from "../components/page-loader/PageLoader";
 import Appointments from "../components/mui/apppointment/Appointment";
+import Chat from "../components/Chat/Chat";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { green } from "@mui/material/colors";
@@ -64,6 +65,7 @@ export default function Home() {
         <SercviceArea></SercviceArea>
         <Footer></Footer>
       </div>
+      <Chat></Chat>
     </ThemeProvider>
   );
 }

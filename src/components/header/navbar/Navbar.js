@@ -42,7 +42,7 @@ export default function Navbar({ children }) {
                 type="button"
               >
                 <span>massages</span>
-                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <i className="fa fa-angle-down" aria-hidden="true"></i>
               </button>
               <div className="z-10 w-44 hidden group-hover:block absolute top-full left-0 bg-transparent">
                 <ul className="py-2 text-sm text-gray-700 bg-green-50 mt-5 shadow">

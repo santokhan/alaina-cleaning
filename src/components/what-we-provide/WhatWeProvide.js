@@ -24,10 +24,6 @@ export default function WhatWePovide({ children }) {
             <Title>Relaxation</Title>
           </Col>
           <Col>
-            <Image src="/images/other/3.webp" />
-            <Title>Cupping Therapy</Title>
-          </Col>
-          <Col>
             <Image src="/images/other/4.webp" />
             <Title>Hypothyroidism</Title>
           </Col>
