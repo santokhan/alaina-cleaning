@@ -14,7 +14,7 @@ export default function ProductViewer({ className = "", children }) {
 
 export function TitleDescBox({ price, time, children, className }) {
   return (
-    <div className="mr-auto place-self-center col-12 lg:col-span-7 pl-4 lg:pl-8 order-2 lg:order-1">
+    <div className="mr-auto place-self-center col-12 lg:col-span-7 pl-4 lg:pl-8 order-2 lg:order-1 py-16">
       {children}
       <div className="flex justify-start gap-4">
         <Price price={65} time={60} className={"px-0"}>
@@ -43,8 +43,12 @@ export function Image({
   className,
 }) {
   return (
-    <div className="lg:mt-0 col-12 lg:col-span-5 lg:flex px-5 lg:pl-8 order-1 lg:order-2">
-      <img src={src} alt="mockup" className="-translate-y-8 rounded-xl" />
+    <div className="lg:mt-0 col-12 lg:col-span-5 lg:flex px-5 lg:pl-8 order-1 lg:order-2 max-h-[384px] max-w-[420px]">
+      <img
+        src={src}
+        alt="mockup"
+        className="-translate-y-8 rounded-xl object-cover w-full h-full"
+      />
     </div>
   );
 }

@@ -18,7 +18,7 @@ export default function MassageChair() {
           pressure applied with the palm of the hand or thumb.
         </Desc>
       </TitleDescBox>
-      <Image src="/images/massages/card/shiatsu.png" />
+      <Image src="/images/massages/card/shiatsu.jpg" />
     </ProductViewer>
   );
 }

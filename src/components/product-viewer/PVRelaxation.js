@@ -18,7 +18,7 @@ export default function PVRelaxation() {
           relax.
         </Desc>
       </TitleDescBox>
-      <Image></Image>
+      <Image src="/images/massages/card/relax.jpg" />
     </ProductViewer>
   );
 }

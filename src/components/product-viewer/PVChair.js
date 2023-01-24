@@ -18,7 +18,7 @@ export default function PVChair() {
           and does not require oils or creams.
         </Desc>
       </TitleDescBox>
-      <Image></Image>
+      <Image src="/images/massages/card/chair.png" />
     </ProductViewer>
   );
 }

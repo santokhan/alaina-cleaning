@@ -49,12 +49,14 @@ export default function Home() {
         <WhatWeProvide></WhatWeProvide>
         <MassageRates myRef={myRef}></MassageRates>
         <SLayout>
-          <SHeader>
-            <STitle>Book an appointments now</STitle>
-          </SHeader>
-          <SMain>
-            <Appointments></Appointments>
-          </SMain>
+          <div className="bg-white pt-10">
+            <SHeader>
+              <STitle>Book an appointments now</STitle>
+            </SHeader>
+            <SMain>
+              <Appointments></Appointments>
+            </SMain>
+          </div>
         </SLayout>
         <ClientSay></ClientSay>
         <Gallary></Gallary>

@@ -18,7 +18,7 @@ export default function PVSports() {
           muscle injury.
         </Desc>
       </TitleDescBox>
-      <Image></Image>
+      <Image src="/images/massages/card/sport.jpg" />
     </ProductViewer>
   );
 }
