@@ -54,7 +54,7 @@ export default function Footer() {
                 className="flex gap-2 items-center hover:underline hover:underline-offset-4 hover:decoration-2 hover:translate-x-2 transition-all ease-in"
               >
                 <Envelope />
-                info@massagejanmorks.nl
+                jandatkan@gmail.com
               </a>
             </li>
           </NL>
@@ -100,7 +100,7 @@ export function Subscribe({ children }) {
           id="email"
           aria-describedby="helper-text-explanation"
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-green-500 focus:border-green-500 block w-full px-4 py-3 relative rounded-2xl overflow-hidden"
-          placeholder="name@massagejanmorks.nl"
+          placeholder="jandatkan@gmail.com"
         />
         <button
           type="button"

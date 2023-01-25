@@ -26,6 +26,7 @@ root.render(
         <Route path="/living" element={<YoungLiving />}></Route>
         <Route path="/pageloader" element={<PageLoader />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/terms" element={<MassageChair />}></Route>
         <Route path="/massages" element={<Massages />}></Route>
         <Route path="/massages/shiatsu" element={<MassageShiatsu />}></Route>
         <Route path="/massages/sports" element={<MassageSports />}></Route>
@@ -34,6 +35,7 @@ root.render(
           path="/massages/relaxation"
           element={<MassageRelaxation />}
         ></Route>
+        <Route path="*" element={<Home />}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

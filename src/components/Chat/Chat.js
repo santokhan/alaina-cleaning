@@ -1,6 +1,4 @@
 export default function Chart({ children, className }) {
-  const boxCSS = "p-4 bg-green-100/50 backdrop-blur-sm";
-
   return (
     <div
       className={
@@ -15,7 +13,10 @@ export default function Chart({ children, className }) {
         rel="noopener noreferrer"
         className={
           "p-3 bg-green-100/50 hover:bg-white backdrop-blur-sm divide-y" +
-          " w-full h-full rounded-l-lg"
+          " w-full h-full rounded-l-lg" +
+          " flex items-center gap-2" +
+          " group" +
+          " transition-all ease-in duration-500"
         }
       >
         <svg
@@ -36,6 +37,9 @@ export default function Chart({ children, className }) {
             fill="#00D95F"
           />
         </svg>
+        <small className="hidden group-hover:inline-block border-none">
+          Direct Contact
+        </small>
       </a>
     </div>
   );
