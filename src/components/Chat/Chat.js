@@ -10,7 +10,7 @@ export default function Chart({ children, className }) {
       }
     >
       <a
-        href="https://wa.me/0642744368"
+        href="https://wa.me/+31642744368"
         target="_blank"
         rel="noopener noreferrer"
         className={
