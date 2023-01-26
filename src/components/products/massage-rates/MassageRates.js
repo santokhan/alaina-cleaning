@@ -17,19 +17,19 @@ export default function MassageRates({ myRef }) {
       <div id="agricultural">
         <PLayout myRef={myRef}>
           <PHeader>
-            <PTitle>TARIEVEN MASSAGEPRAKTIJK AH Massage</PTitle>
+            <PTitle>TARIEVEN AH Massage</PTitle>
           </PHeader>
           {/* <PTabs>
             <Tab id={1}>All Massages</Tab>
-            <Tab id={2}>30 minute</Tab>
-            <Tab id={3}>90 minute</Tab>
+            <Tab id={2}>30 minuten</Tab>
+            <Tab id={3}>90 minuten</Tab>
             <Tab id={4}>120 minuite</Tab>
           </PTabs> */}
           <PMain>
             <PCard category={4} id="sports" to="/massages/sports">
               <CImg src="/images/massages/card/sport.jpg" />
               <CTitle>sports</CTitle>
-              <CDes>Travel 15 km 10,-</CDes>
+              <CDes>Traveling from 15 up to 25 km +10,-</CDes>
               <Price price={65} time={60}>
                 <BookNow to="/appointments"></BookNow>
               </Price>
@@ -37,7 +37,7 @@ export default function MassageRates({ myRef }) {
             <PCard category={4} id="shiatsu" to="/massages/shiatsu">
               <CImg src="/images/massages/card/shiatsu.jpg" />
               <CTitle>shiatsu</CTitle>
-              <CDes>Travel 15 km 10,-</CDes>
+              <CDes>Traveling from 15 up to 25 km +10,-</CDes>
               <Price price={65} time={60}>
                 <BookNow to="/appointments"></BookNow>
               </Price>
@@ -45,7 +45,7 @@ export default function MassageRates({ myRef }) {
             <PCard category={2} to="/massages/relaxation">
               <CImg src="/images/massages/card/relax.jpg" />
               <CTitle>Ontspanning</CTitle>
-              <CDes>Travel 15 km 10,-</CDes>
+              <CDes>Traveling from 15 up to 25 km +10,-</CDes>
               <Price price={65} time={60}>
                 <BookNow to="/appointments"></BookNow>
               </Price>
@@ -53,7 +53,7 @@ export default function MassageRates({ myRef }) {
             <PCard category={2} id="chair" to="/massages/chair">
               <CImg src="/images/massages/card/chair.png" />
               <CTitle>Stoel</CTitle>
-              <CDes>Travel 15 km 10,-</CDes>
+              <CDes>Traveling from 15 up to 25 km +10,-</CDes>
               <Price price={65} time={60}>
                 <BookNow to="/appointments"></BookNow>
               </Price>

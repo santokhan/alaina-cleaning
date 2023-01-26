@@ -35,8 +35,8 @@ export default function Navbar({ children }) {
         </Link>
         <div className="items-center justify-between w-full text-base lg:flex lg:w-auto lg:order-1">
           <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-            <NLink to="/">home</NLink>
-            <NLink to="/about">about</NLink>
+            <NLink to="/">Thuis</NLink>
+            <NLink to="/about">Wat Betreft</NLink>
             <div className="relative group">
               <button
                 className="hover:underline hover:underline-offset-4 hover:decoration-2 text-gray-900 transition-all ease-in flex gap-2 items-center capitalize"

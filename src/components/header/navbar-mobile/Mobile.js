@@ -56,8 +56,8 @@ export default function Navbar({ children }) {
           {dropdown ? (
             <div className="absolute right-0 top-full bg-white w-full h-screen">
               <ul className="flex flex-col mt-4 font-medium xl:flex-row xl:space-x-8 xl:mt-0">
-                <DDLink to="/">home</DDLink>
-                <DDLink to="/about">about</DDLink>
+                <DDLink to="/">Thuis</DDLink>
+                <DDLink to="/about">Wat Betreft</DDLink>
                 <div className="relative group px-6 py-2">
                   <button
                     className="hover:underline hover:underline-offset-4 hover:decoration-2 text-gray-900 transition-all ease-in flex gap-2 items-center capitalize"

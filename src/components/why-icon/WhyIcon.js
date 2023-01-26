@@ -10,7 +10,8 @@ export default function WhyIcon() {
     <div className="bg-green-50">
       <SLayout>
         <SHeader>
-          <STitle>Why Choose Massage AH Massage?</STitle>
+          {/* <STitle>Why Choose AH Massage?</STitle> */}
+          <STitle>WAAROM KIEZEN VOOR MASSAGE AH MASSAGE?</STitle>
           <SDes>
             The right product at a right time! ICON is very recognized in its
             vast experience of importing used and brand new automobiles for

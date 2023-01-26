@@ -9,7 +9,8 @@ export default function WhyChooseUs({ children }) {
           <div className="w-full lg:w-1/2"></div>
           <div className="w-full lg:w-1/2 px-8 lg:px-8 py-4 bg-white/75 backdrop-blur-sm rounded-xl">
             <div className="flex flex-col gap-4 relative mb-4">
-              <STitle>WHY CHOOSE MASSAGE AH Massage?</STitle>
+              {/* <STitle>WHY CHOOSE AH Massage?</STitle> */}
+              <STitle>WAAROM KIEZEN VOOR MASSAGE AH MASSAGE?</STitle>
               <div className="text-gray-500 text-xl font-medium">
                 We zijn er trots op een breed scala aan uitgebreide diensten aan
                 te bieden om te voldoen aan de behoeften van volwassenen,

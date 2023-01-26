@@ -29,7 +29,7 @@ export default function SercviceArea({ children }) {
                 Wij zijn gespecialiseerd in het bieden van de beste massage die
                 beschikbaar is, binnen{" "}
                 <span className="font-bold whitespace-nowrap">
-                  15 kilometer
+                  25 kilometer
                 </span>{" "}
                 van onze locatie. Ons team bestaat uit gediplomeerde therapeuten
                 met jarenlange ervaring in massagetherapie en biedt een scala
