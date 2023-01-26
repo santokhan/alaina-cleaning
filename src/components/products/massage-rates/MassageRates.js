@@ -36,7 +36,7 @@ export default function MassageRates({ myRef }) {
             </PCard>
             <PCard category={4} id="shiatsu" to="/massages/shiatsu">
               <CImg src="/images/massages/card/shiatsu.jpg" />
-              <CTitle>shiatsu</CTitle>
+              <CTitle>Shiatsumassge</CTitle>
               <CDes>Regio: Brummen +15km</CDes>
               <Price price={65} time={60}>
                 <BookNow to="/appointments"></BookNow>
@@ -44,7 +44,7 @@ export default function MassageRates({ myRef }) {
             </PCard>
             <PCard category={2} to="/massages/relaxation">
               <CImg src="/images/massages/card/relax.jpg" />
-              <CTitle>Ontspanning</CTitle>
+              <CTitle>Ontspanningsmassage</CTitle>
               <CDes>Regio: Brummen +15km</CDes>
               <Price price={65} time={60}>
                 <BookNow to="/appointments"></BookNow>
