@@ -8,9 +8,7 @@ export default function PageLoader() {
         alt="loader logo"
         className="w-40 xl:w-60 object-contain"
       />
-      <div className="playfair text-green-800 text-5xl mt-4">
-        Massage AH Massage
-      </div>
+      <div className="playfair text-green-800 text-5xl mt-4">AH Massage</div>
       <div className="loader"></div>
     </div>
   );
