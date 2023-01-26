@@ -22,9 +22,16 @@ export default function About() {
                 id="m"
                 className="text-5xl font-bold float-left pr-1"
               ></span>
-              Direct te boeken in regio Arnhem, Apeldoorn, Deventer, Lochem,
-              Zutphen, Doetinchem. De APK voor u lijf. Professionele massages
-              bij u thuis.
+              Sinds 2008 verzorgt MassageWorks ambulante paramedische
+              ondersteuning voor zowel bedrijven als particulieren. Middels
+              massagevormen als Shiatsu en Stoelmassage, kan regelmatige
+              behandeling een goede interventie zijn bij chronische klachten
+              opbouw. Een gestemde stevige rug, nek schouder massage verfrist
+              elke werknemer direkt. Voor particulieren bieden wij gereduceerde
+              tarieven voor Sport of Ontspanningsmassages bij frequentie van 14
+              dagen of minder. Direct te boeken in regio Arnhem, Apeldoorn,
+              Deventer, Lochem, Zutphen, Doetinchem. De APK voor u lijf.
+              Professionele massages bij u thuis.
             </SDes>
             <div className="flex flex-nowrap gap-2 justify-end items-center lg:hidden py-3">
               <a href="http://massagejanmorks.nl" className="font-semibold">
