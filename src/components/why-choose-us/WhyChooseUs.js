@@ -3,7 +3,7 @@ import SLayout, { STitle } from "../section-layout/SectionLayout";
 
 export default function WhyChooseUs({ children }) {
   return (
-    <div id="janmorks" className="bg-white relative why-choose-us">
+    <div className="bg-white relative why-choose-us">
       <SLayout>
         <div className="flex flex-wrap justify-center">
           <div className="w-full lg:w-1/2"></div>

@@ -7,8 +7,8 @@ export default function About() {
         <SMain>
           <div className="max-w-2xl mx-auto relative w-full overflow-hidden">
             <div className="hidden lg:flex flex-nowrap gap-2 justify-center items-center absolute -right-56 bottom-2 -rotate-90">
-              <a href="http://massagejanmorks.nl" className="font-semibold">
-                massagejanmorks.nl
+              <a href="http://ahmassage.nl" className="font-semibold">
+                ahmassage.nl
               </a>
               <div className="vertical-line bg-green-700"></div>
             </div>
@@ -34,8 +34,8 @@ export default function About() {
               Professionele massages bij u thuis.
             </SDes>
             <div className="flex flex-nowrap gap-2 justify-end items-center lg:hidden py-3">
-              <a href="http://massagejanmorks.nl" className="font-semibold">
-                massagejanmorks.nl
+              <a href="http://ahmassage.nl" className="font-semibold">
+                ahmassage.nl
               </a>
               <div className="vertical-line bg-green-700"></div>
             </div>
