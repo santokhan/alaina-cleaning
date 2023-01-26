@@ -1,7 +1,6 @@
-import * as React from "react";
+import React from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import SLayout, {
   SDes,
@@ -12,9 +11,7 @@ import SLayout, {
 import TabPanel1 from "./tab-panel/TabPanel1";
 import TabPanel2 from "./tab-panel/TabPanel2";
 import TabPanel3 from "./tab-panel/TabPanel3";
-import TabPanel4 from "./tab-panel/TabPanel4";
 import TabPanel5 from "./tab-panel/TabPanel5";
-import TabPanel6 from "./tab-panel/TabPanel6";
 import Dots from "../../dots/Dots";
 
 function TabPanel(props) {
@@ -100,6 +97,7 @@ export default function VerticalTabs() {
                   borderRadius: 2,
                   width: 1,
                 }}
+                // label="Shiatsu massage"
                 label="Shiatsu massage"
                 {...a11yProps(0)}
               />
@@ -112,7 +110,8 @@ export default function VerticalTabs() {
                   borderRadius: 2,
                   width: 1,
                 }}
-                label="Relaxation massage"
+                // label="Relaxation massage"
+                label="Ontspannings massage"
                 {...a11yProps(1)}
               />
               <Tab
@@ -124,7 +123,8 @@ export default function VerticalTabs() {
                   borderRadius: 2,
                   width: 1,
                 }}
-                label="Chair massage"
+                // label="Chair massage"
+                label="Stoel Massage"
                 {...a11yProps(2)}
               />
               <Tab
@@ -136,6 +136,7 @@ export default function VerticalTabs() {
                   borderRadius: 2,
                   width: 1,
                 }}
+                // label="Sports massage"
                 label="Sports massage"
                 {...a11yProps(4)}
               />

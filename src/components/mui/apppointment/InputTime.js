@@ -1,5 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
-import axios from "axios";
+import React, { useContext } from "react";
 import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -38,7 +37,8 @@ export default function InputTime({ times }) {
         <InputLabel>Time</InputLabel>
         <Select value={data.time} label="Time" required onChange={handleChange}>
           <h1 style={{ fontWeight: "bold", padding: "10px 15px" }}>
-            Available Time
+            {/* Available Time */}
+            Beschikbare tijd
           </h1>
           {availableTime.map((e, i) => (
             <MenuItem value={e} key={i}>

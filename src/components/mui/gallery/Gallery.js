@@ -20,7 +20,8 @@ export default function Gallery() {
   return (
     <SLayout>
       <SHeader>
-        <STitle>Overview</STitle>
+        {/* <STitle>Overview</STitle> */}
+        <STitle>overzicht</STitle>
       </SHeader>
       <SMain>
         <ImageList

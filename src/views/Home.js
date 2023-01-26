@@ -52,7 +52,8 @@ export default function Home() {
         <SLayout>
           <div className="bg-white pt-10">
             <SHeader>
-              <STitle>Book an appointments now</STitle>
+              {/* <STitle>BOOK AN APPOINTMENTS NOW</STitle> */}
+              <STitle>BOEK NU EEN AFSPRAAK</STitle>
             </SHeader>
             <SMain>
               <Appointments></Appointments>

@@ -1,15 +1,19 @@
-import SLayout, {
-  SHeader,
-  SMain,
-  STitle,
-} from "../section-layout/SectionLayout";
+import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import SLayout, { SHeader, STitle } from "../section-layout/SectionLayout";
 
 export default function ContactFrom() {
+  const [state, handleSubmit] = useForm("xbjedjqo");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
+
   return (
     <div id="contact">
       <SLayout>
         <SHeader>
-          <STitle>Contact Us</STitle>
+          {/* <STitle>Contact Us</STitle> */}
+          <STitle>NEEM CONTACT OP</STitle>
         </SHeader>
         <div className="flex flex-wrap lg:flex-nowrap rounded-3xl bg-white px-2 mt-6">
           <div className="lg:max-w-sm w-full bg-[#3E2093] rounded-2xl text-white flex flex-col relative overflow-hidden">
@@ -20,7 +24,7 @@ export default function ContactFrom() {
             />
           </div>
           <div className="w-full p-6 lg:p-10">
-            <Form></Form>
+            <Form state={state} handleSubmit={handleSubmit}></Form>
           </div>
         </div>
       </SLayout>
@@ -28,7 +32,7 @@ export default function ContactFrom() {
   );
 }
 
-export function Form() {
+export function Form({ state, handleSubmit }) {
   return (
     <form>
       <div className="flex flex-wrap sm:flex-nowrap sm:gap-8">
@@ -37,13 +41,15 @@ export function Form() {
             htmlFor="firstName"
             className="block mb-2 text-sm font-medium text-textgray"
           >
-            First Name
+            {/* First Name */}
+            Voornaam
           </label>
           <input
             type="text"
             id="firstName"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-700 focus:border-green-700 block w-full p-2.5"
             placeholder="John"
+            defaultValue={state.firsName}
             required
           />
         </div>
@@ -52,13 +58,15 @@ export function Form() {
             htmlFor="lastName"
             className="block mb-2 text-sm font-medium text-textgray"
           >
-            Last Name
+            {/* Last Name */}
+            AchternaamAchternaam
           </label>
           <input
             type="text"
             id="lastName"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-700 focus:border-green-700 block w-full p-2.5"
             placeholder="Doe"
+            defaultValue={state.lastName}
             required
           />
         </div>
@@ -69,13 +77,14 @@ export function Form() {
             htmlFor="email"
             className="block mb-2 text-sm font-medium text-textgray"
           >
-            Email
+            E-mail
           </label>
           <input
             type="email"
             id="email"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-700 focus:border-green-700 block w-full p-2.5"
             placeholder="info@massagejanmorks.nl"
+            defaultValue={state.email}
             required
           />
         </div>
@@ -84,13 +93,15 @@ export function Form() {
             htmlFor="phone"
             className="block mb-2 text-sm font-medium text-textgray"
           >
-            Phone
+            {/* Phone */}
+            Telefoon
           </label>
           <input
             type="text"
             id="phone"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-700 focus:border-green-700 block w-full p-2.5"
             placeholder="+2511 1668 6900"
+            defaultValue={state.phone}
             required
           />
         </div>
@@ -100,7 +111,8 @@ export function Form() {
           htmlFor="message"
           className="block mb-2 text-sm font-medium text-textgray"
         >
-          Your message
+          {/* Message */}
+          Bericht
         </label>
         <textarea
           id="message"
@@ -114,7 +126,8 @@ export function Form() {
           type="submit"
           className="text-white bg-green-700 hover:brightness-90 focus:ring-4 focus:outline-none focus:ring-green-900 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
         >
-          Submit
+          {/* Submit */}
+          Indienen
         </button>
       </div>
     </form>

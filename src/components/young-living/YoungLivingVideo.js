@@ -21,23 +21,25 @@ export default function YoungLivingVideo({ children }) {
           </div>
           <div className="w-full xl:w-1/2 px-3 py-4 backdrop-blur-sm rounded-xl">
             <div className="flex flex-col gap-4 relative mb-4">
-              <STitle>Young Living Information Evening</STitle>
+              {/* <STitle>Young Living Information Evening</STitle> */}
+              <STitle>Informatieavond Young Living</STitle>
               <SDes className="">
-                From January 2016 every Saturday evening information evenings
-                absolute{" "}
+                Vanaf januari 2016 elke zaterdagavond informatieavonden absolute{" "}
                 <span className="font-semibold">
                   Young Living Essential Oil!
                 </span>
               </SDes>
               <div>
-                <SDes>From 19:00 to 22:00</SDes>
-                <SDes>In practice in Vlaardingen</SDes>
+                <SDes>Van 19:00 tot 22:00 uur</SDes>
+                {/* <SDes>In practice in Vlaardingen</SDes> */}
+                <SDes>In de praktijk in Vlaardingen</SDes>
               </div>
-              <SDes>"What an enrichment this is for our family!"</SDes>
+              {/* <SDes>"What an enrichment this is for our family!"</SDes> */}
+              <SDes>"Wat een verrijking is dit voor ons gezin!"</SDes>
               <SDes>
-                Are you coming as well? You can register via the{" "}
+                Kom jij ook? Aanmelden kan via het{" "}
                 <a href="#contact" className="text-green-800 hover:underline">
-                  contact form
+                  {/* contact form */}contactformulier
                 </a>
                 .
               </SDes>

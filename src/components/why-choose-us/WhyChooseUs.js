@@ -10,19 +10,22 @@ export default function WhyChooseUs({ children }) {
           <div className="w-full lg:w-1/2"></div>
           <div className="w-full lg:w-1/2 px-8 lg:px-8 py-4 bg-white/75 backdrop-blur-sm rounded-xl">
             <div className="flex flex-col gap-4 relative mb-4">
-              <STitle>Why Choose Massage Jan Morks?</STitle>
+              <STitle>WHY CHOOSE MASSAGE AH Massage?</STitle>
               <div className="text-gray-500 text-xl font-medium">
-                We are proud to offer a wide range of comprehensive services to
-                meet the needs of adults, seniors, and pediatric patients.
+                We zijn er trots op een breed scala aan uitgebreide diensten aan
+                te bieden om te voldoen aan de behoeften van volwassenen,
+                senioren en pediatrische patiënten.
               </div>
               <div className="text-gray-500">
-                Brisket cow leberkas pastrami shoulder. Tri-tip jowl jerky
-                meatball bresaola sirloin. Venison leberkas landjaeger picanha
-                fatback cow rump chicken. Tri-tip pork chop pork beef tail. Cow
-                meatloaf shankle pork loin beef ribs jowl bresaola. Short ribs
-                rump turducken sirloin ham hock pork belly kevin. Porchetta pork
-                picanha, ham hock spare. ribs kevin pastrami tongue leberkas
-                jowl tenderloin andouille meatloaf ball tip alcatra.
+                Borststuk koe leberkas pastrami schouder. Tri-tip jowl jerky
+                gehaktbal bresaola entrecote. Hertenvlees leberkas landjaeger
+                picanha fatback koe rump kip. Tri-tip varkenskarbonade
+                varkensvlees runderstaart. Rundsgehaktschenkel varkenslende
+                runderribben kaak bresaola. Shortribs rump turducken entrecote
+                ham spronggewricht varkensbuik kevin. Porchetta varkensvlees
+                picanha, ham spronggewricht reserve. spareribs kevin pastrami
+                tong leberkas wang ossenhaas andouille gehaktbrood ball tip
+                alcatra.
               </div>
             </div>
           </div>

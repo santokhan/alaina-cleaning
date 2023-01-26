@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import { Box, Col, DetailsLink, Image, Row, Title } from "./CardLayout";
 import List, { Item } from "./List";
 
@@ -14,17 +12,20 @@ export default function TabPanel1() {
           <Title>Shiatsu massage</Title>
           <List>
             <Item>
-              A soft and full stroke glows your skin under neutral or scented
-              oil
+              De extra dikke katoenen mat in de praktijk vormt zich heerlijk
+              naar uw lichaam en geeft ruimte voor een krachtige of subtiele
+              behandeling
             </Item>
             <Item>
-              The relaxation massage is an energetic and subtle massage. Slow
-              soft stroking alternates with tapping, swaying or possibly sound.
-              Discuss in advance which massage pressure you experience as
-              pleasant. You can also indicate preferences for your massage,
-              attention for feet and calves or rather neck and head tension?
-              Slow long strokes bring back the connection with the emotional
-              life.
+              Shiatsu massage is een Japanse vorm van herstellend lichaamswerk.
+              Het omvat meer dan massage en is eigenlijk een levensstijl. De
+              helende werking gaat uit van de masseur die zijn gewicht
+              verplaatst op het ademhalingsritme van de cliënt. Bij een
+              verstoorde balans zijn er punten op het lichaam verzwakt of
+              gespannen. Shiatsu wordt letterlijk vertaald als “vinger druk”.
+              Het maakt gebruik van drukken, kloppen, kneden, schudden, strekken
+              en kalmeren. Shiatsu wordt uitgevoerd zonder olie en over de
+              kleding heen.
             </Item>
           </List>
           <DetailsLink to="/meer-over-shiatsu-massages">

@@ -10,7 +10,8 @@ export default function Gallary() {
   return (
     <PLayout id="overview">
       <PHeader>
-        <PTitle>Overview</PTitle>
+        {/* <PTitle>Overview</PTitle> */}
+        <PTitle>OVERZICHT</PTitle>
       </PHeader>
       <PMain>
         <ZoomView src={src} setsrc={setsrc}></ZoomView>
@@ -46,7 +47,8 @@ export default function Gallary() {
             }}
             className="text-white bg-green-700 hover:brightness-90 focus:ring-4 focus:outline-none focus:ring-green-900 font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center"
           >
-            View more
+            {/* View more */}
+            Bekijk meer
           </button>
         </div>
       ) : (

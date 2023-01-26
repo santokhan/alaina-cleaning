@@ -65,7 +65,8 @@ export default function MaterialUIPickers({ handleTimes }) {
         }}
       >
         <DesktopDatePicker
-          label="Appointment Date"
+          // label="Appointment Date"
+          label="Afspraak Datum"
           minDate={new Date()}
           inputFormat="MM/DD/YYYY"
           value={value}

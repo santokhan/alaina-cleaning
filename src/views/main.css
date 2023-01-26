@@ -219,9 +219,7 @@ button {
     outline: none
 }
 
-button:focus {
-    outline: 2px auto -webkit-focus-ring-color
-}
+
 
 fieldset {
     margin: 0;
@@ -1627,9 +1625,6 @@ mark {
     transition: all .2s ease-in-out
 }
 
-.Button:focus {
-    outline: 0
-}
 
 .Button:hover {
     background-color: #a40f51

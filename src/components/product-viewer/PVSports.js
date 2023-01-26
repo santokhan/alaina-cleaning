@@ -9,13 +9,13 @@ export default function PVSports() {
   return (
     <ProductViewer>
       <TitleDescBox>
-        <Title>Sports Massage</Title>
+        <Title>Sportsmassage</Title>
         <Desc>
-          Sports massage is proven to release and reduce tension in muscles,
-          improve circulation and encourage the removal of waste products such
-          as lactic acid during high intensity activity and can help to relax
-          the body. All of this helps promote recovery and reduces the chance of
-          muscle injury.
+          Het is bewezen dat sportmassage spanning in spieren losmaakt en
+          vermindert, de bloedsomloop verbetert en de afvoer van afvalproducten
+          zoals melkzuur bevordert tijdens intensieve activiteit, en kan helpen
+          het lichaam te ontspannen. Dit alles bevordert het herstel en
+          verkleint de kans op spierblessures.
         </Desc>
       </TitleDescBox>
       <Image src="/images/massages/card/sport.jpg" />

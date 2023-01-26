@@ -70,12 +70,13 @@ export default function Navbar({ children }) {
                     <ul className="py-2 text-sm text-gray-700">
                       <DDLink to="/massages/sports">sports</DDLink>
                       <DDLink to="/massages/shiatsu">shiatsu</DDLink>
-                      <DDLink to="/massages/chair">chair</DDLink>
-                      <DDLink to="/massages/relaxation">relaxation</DDLink>
+                      <DDLink to="/massages/chair">stoel</DDLink>
+                      {/* <DDLink to="/massages/relaxation">relaxation</DDLink> */}
+                      <DDLink to="/massages/relaxation">ontspanning</DDLink>
                     </ul>
                   </div>
                 </div>
-                {/* <DDLink to="/janmorks">jan morks</DDLink> */}
+                {/* <DDLink to="/ahmassage">ah massage</DDLink> */}
                 <DDLink to="/contact">contact</DDLink>
                 <DDItem to="/living">young living</DDItem>
               </ul>

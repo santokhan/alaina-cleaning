@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -13,8 +13,6 @@ import { Pagination, Autoplay, Navigation } from "swiper";
 import HeroSection from "./HeroSection";
 import HeroSection1 from "./HeroSection1";
 import HeroSection2 from "./HeroSection2";
-import HeroSection3 from "./HeroSection3";
-import HeroSection4 from "./HeroSection4";
 
 export default function SwiperSlider({ startScroll }) {
   return (

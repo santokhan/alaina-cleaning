@@ -15,16 +15,16 @@ export default function About() {
 
             <div className="mb-4 relative border-l-4 pl-3 lg:pl-0 border-green-700 lg:border-none flex justify-start">
               <div className="horizontal-line bg-green-700 absolute -left-48 top-2 hidden lg:block"></div>
-              <STitle>What is a Body Massage - Jan Morks?</STitle>
+              <STitle>Massage Moment</STitle>
             </div>
             <SDes>
-              <span id="m" className="text-5xl font-bold float-left pr-1">
-                M
-              </span>
-              assage is a treatment that uses different kinds of physical
-              contact to relax, revive and heal the body. It is used to treat a
-              wide range of emotional and physical health problems and is one of
-              the most popular treatments on a spa menu.
+              <span
+                id="m"
+                className="text-5xl font-bold float-left pr-1"
+              ></span>
+              Direct te boeken in regio Arnhem, Apeldoorn, Deventer, Lochem,
+              Zutphen, Doetinchem. De APK voor u lijf. Professionele massages
+              bij u thuis.
             </SDes>
             <div className="flex flex-nowrap gap-2 justify-end items-center lg:hidden py-3">
               <a href="http://massagejanmorks.nl" className="font-semibold">

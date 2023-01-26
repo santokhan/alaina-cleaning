@@ -18,7 +18,8 @@ export default function InputText() {
     >
       <div>
         <TextField
-          label="Message"
+          // label="Message"
+          label="Bericht"
           multiline
           rows={4}
           sx={{ width: 320 }}

@@ -1,7 +1,5 @@
 import Header from "../components/header/Header";
-import MassageRates, {
-  MassageRatesIndivudual,
-} from "../components/products/massage-rates/MassageRates";
+import { MassageRatesIndivudual } from "../components/products/massage-rates/MassageRates";
 import Footer from "../components/footer/Footer";
 import React, { useRef } from "react";
 import SercviceArea from "../components/service-area/ServiceArea";
@@ -20,9 +18,9 @@ const theme = createTheme({
 
 export default function MassageRelaxation() {
   const myRef = useRef(null);
-  function startScroll() {
-    myRef.current.scrollIntoView();
-  }
+  // function startScroll() {
+  //   myRef.current.scrollIntoView();
+  // }
 
   return (
     <ThemeProvider theme={theme}>

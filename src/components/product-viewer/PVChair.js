@@ -9,13 +9,13 @@ export default function PVChair() {
   return (
     <ProductViewer>
       <TitleDescBox>
-        <Title>Chair Massage</Title>
+        <Title>Stoel Massage</Title>
         <Desc>
-          Chair massage - also known as seated massage - is a type of massage
-          that takes place on an traditional massage chair, designed to take the
-          weight off the spine and give easy access to the head, neck, back,
-          shoulders and arms. The massage is most commonly done over the clothes
-          and does not require oils or creams.
+          Stoelmassage - ook wel zitmassage genoemd - is een vorm van massage
+          dat vindt plaats op een traditionele massagestoel, ontworpen om de
+          ontlast de wervelkolom en geeft gemakkelijk toegang tot het hoofd, de
+          nek, de rug, schouders en armen. De massage wordt meestal over de
+          kleding gedaan en vereist geen oliën of crèmes.
         </Desc>
       </TitleDescBox>
       <Image src="/images/massages/card/chair.png" />

@@ -1,5 +1,3 @@
-import Link from "react-router-dom";
-import { useLocation } from "react-router-dom";
 import LogoFooter from "../header/logo/LogoFooter";
 import Social from "../social/Social";
 import React from "react";
@@ -20,11 +18,12 @@ export default function Footer() {
         <div className="w-auto py-2 lg:py-0">
           <div className="uppercase font-bold mb-2">Sitemap</div>
           <NL>
-            <NLink path="/#">Home</NLink>
+            <NLink path="/">Home</NLink>
             <NLink path="/about">about</NLink>
             <NLink path="/massages">massages</NLink>
-            <NLink path="/#contact">contact</NLink>
-            <NLink path="/#overview">overview</NLink>
+            <NLink path="/contact">contact</NLink>
+            {/* <NLink path="/#overview">overview</NLink> */}
+            <NLink path="/#overview">overzicht</NLink>
           </NL>
         </div>
         <div className="w-auto py-2 lg:py-0 mr-12">
@@ -32,8 +31,9 @@ export default function Footer() {
           <NL>
             <NLink path="/massages/sports">sports</NLink>
             <NLink path="/massages/shiatsu">shiatsu</NLink>
-            <NLink path="/massages/chair">chair</NLink>
-            <NLink path="/massages/relaxation">relaxation</NLink>
+            <NLink path="/massages/chair">stoel</NLink>
+            {/* <NLink path="/massages/relaxation">relaxation</NLink> */}
+            <NLink path="/massages/relaxation">ontspanning</NLink>
           </NL>
         </div>
         <div className="w-full sm:w-1/2 lg:w-3/12 py-2 lg:py-0">

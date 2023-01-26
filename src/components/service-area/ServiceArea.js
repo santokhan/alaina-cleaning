@@ -1,6 +1,5 @@
 import React from "react";
 import SLayout, { STitle } from "../section-layout/SectionLayout";
-import List, { Item } from "../whatweimport/List";
 
 export default function SercviceArea({ children }) {
   return (
@@ -19,21 +18,22 @@ export default function SercviceArea({ children }) {
           </div>
           <div className="w-full px-8 lg:px-8 py-4 rounded-xl">
             <div className="flex flex-col gap-4 relative mb-4">
-              <STitle>Our service area</STitle>
+              {/* <STitle>Our service area</STitle> */}
+              <STitle>ONS SERVICEGEBIED</STitle>
               <div className="text-gray-500 text-xl font-medium">
-                Have you ever had a massage that makes your body feel relaxed
-                and rejuvenated? One that leaves you feeling like you are
-                floating on air? That’s exactly what we provide at our service.
+                Heb je ooit een massage gehad waardoor je lichaam ontspannen en
+                verjongd aanvoelt? Een die je het gevoel geeft alsof je in de
+                lucht zweeft? Dat is precies wat wij bieden bij onze service.
               </div>
               <div className="text-gray-500 text-xl font-medium">
-                We specialize in providing customers with the best massage
-                available, within{" "}
+                Wij zijn gespecialiseerd in het bieden van de beste massage die
+                beschikbaar is, binnen{" "}
                 <span className="font-bold whitespace-nowrap">
-                  15 kilometers
+                  15 kilometer
                 </span>{" "}
-                of our location. Our team is made up of certified therapists who
-                have years of experience in massage therapy, offering an array
-                of treatments to suit your individual needs.
+                van onze locatie. Ons team bestaat uit gediplomeerde therapeuten
+                met jarenlange ervaring in massagetherapie en biedt een scala
+                aan behandelingen die aansluiten bij uw individuele behoeften.{" "}
               </div>
             </div>
           </div>

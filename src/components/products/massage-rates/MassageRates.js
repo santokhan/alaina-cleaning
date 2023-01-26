@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PLayout from "../layout/PLayout";
-import PHeader, { PTitle, PIcon } from "../layout/PHeader";
+import PHeader, { PTitle } from "../layout/PHeader";
 import PMain from "../layout/PMain";
 import PCard, { CImg, CTitle, CDes, Price } from "../layout/PCard";
 import { AgriculturalContext } from "../../../context/tabs/AgriculturalContext";
@@ -17,7 +17,7 @@ export default function MassageRates({ myRef }) {
       <div id="agricultural">
         <PLayout myRef={myRef}>
           <PHeader>
-            <PTitle>Rates Massage Practice Jan Morks </PTitle>
+            <PTitle>TARIEVEN MASSAGEPRAKTIJK AH Massage</PTitle>
           </PHeader>
           {/* <PTabs>
             <Tab id={1}>All Massages</Tab>
@@ -44,7 +44,7 @@ export default function MassageRates({ myRef }) {
             </PCard>
             <PCard category={2} to="/massages/relaxation">
               <CImg src="/images/massages/card/relax.jpg" />
-              <CTitle>relaxation</CTitle>
+              <CTitle>Ontspanning</CTitle>
               <CDes>Travel 15 km 10,-</CDes>
               <Price price={65} time={60}>
                 <BookNow to="/appointments"></BookNow>
@@ -52,7 +52,7 @@ export default function MassageRates({ myRef }) {
             </PCard>
             <PCard category={2} id="chair" to="/massages/chair">
               <CImg src="/images/massages/card/chair.png" />
-              <CTitle>chair</CTitle>
+              <CTitle>Stoel</CTitle>
               <CDes>Travel 15 km 10,-</CDes>
               <Price price={65} time={60}>
                 <BookNow to="/appointments"></BookNow>
@@ -79,7 +79,8 @@ export function MassageRatesIndivudual({
       <div id="agricultural">
         <PLayout myRef={myRef}>
           <PHeader>
-            <PTitle>Ralated Massages</PTitle>
+            {/* <PTitle>RELATED MASSAGES</PTitle> */}
+            <PTitle>GERELATEERDE MASSAGES</PTitle>
           </PHeader>
           <PMain>
             {index.includes("sports") ? (
@@ -109,7 +110,8 @@ export function MassageRatesIndivudual({
             {index.includes("relaxation") ? (
               <PCard category={2} to="/massages/relaxation">
                 <CImg src="/images/massages/card/relax.jpg" />
-                <CTitle>relaxation</CTitle>
+                {/* <CTitle>relaxation</CTitle> */}
+                <CTitle>ontspanning</CTitle>
                 <CDes>Travel 25 km 10,-</CDes>{" "}
                 <Price price={65} time={60}>
                   <BookNow to="/appointments"></BookNow>
@@ -121,7 +123,8 @@ export function MassageRatesIndivudual({
             {index.includes("chair") ? (
               <PCard category={2} id="chair" to="/massages/chair">
                 <CImg src="/images/massages/card/chair.png" />
-                <CTitle>chair</CTitle>
+                {/* <CTitle>chair</CTitle> */}
+                <CTitle>stoel</CTitle>
                 <CDes>Travel 25 km 10,-</CDes>{" "}
                 <Price price={65} time={60}>
                   <BookNow to="/appointments"></BookNow>

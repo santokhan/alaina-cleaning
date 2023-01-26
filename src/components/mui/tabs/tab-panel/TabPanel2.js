@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import { Box, Col, DetailsLink, Image, Row, Title } from "./CardLayout";
 import List, { Item } from "./List";
 
@@ -11,20 +9,21 @@ export default function TabPanel1() {
       </Col>
       <Col>
         <Box>
-          <Title>Relaxation massage</Title>
+          {/* Relaxation massage */}
+          <Title>Ontspannings massage</Title>
           <List>
             <Item>
-              A soft and full stroke glows your skin under neutral or scented
-              oil
+              Een zachte en volle strijking glooit uw huid onder neutrale of
+              geurende olie
             </Item>
             <Item>
-              The relaxation massage is an energetic and subtle massage. Slow
-              soft stroking alternates with tapping, swaying or possibly sound.
-              Discuss in advance which massage pressure you experience as
-              pleasant. You can also indicate preferences for your massage,
-              attention for feet and calves or rather neck and head tension?
-              Slow long strokes bring back the connection with the emotional
-              life.
+              De ontspanningsmassage is een energetische en subtiele massage.
+              Langzame zachte strijkingen worden afgewisseld met kloppingen,
+              wiegen of mogelijk met klank. Bespreek vooraf welke massagedruk u
+              als prettig ervaart. U kunt tevens voorkeuren aangeven voor uw
+              massage, aandacht voor voeten en kuiten of liever nek en
+              hoofdspanningen? Langzame lange strijkingen brengen de connectie
+              met het gevoelsleven terug.
             </Item>
           </List>
           <DetailsLink to="/meer-over-hotstone-massages">

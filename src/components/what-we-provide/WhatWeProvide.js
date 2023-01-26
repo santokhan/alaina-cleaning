@@ -4,14 +4,13 @@ import SLayout, {
   SMain,
   STitle,
 } from "../section-layout/SectionLayout";
-import List, { Item } from "../whatweimport/List";
 
 export default function WhatWePovide({ children }) {
   return (
     <div id="whyChooseUs" className="bg-green-50 relative">
       <SLayout>
         <SHeader>
-          <STitle>What we provide?</STitle>
+          <STitle>Wat bieden wij?</STitle>
         </SHeader>
         <SMain></SMain>
         <Row>
@@ -21,19 +20,15 @@ export default function WhatWePovide({ children }) {
           </Col>
           <Col>
             <Image src="/images/other/2.webp" />
-            <Title>Relaxation</Title>
+            <Title>Ontspanning</Title>
           </Col>
           <Col>
             <Image src="/images/other/4.webp" />
-            <Title>Hypothyroidism</Title>
+            <Title>Hypothyreoïdie</Title>
           </Col>
           <Col>
             <Image src="/images/other/5.webp" />
-            <Title>Rehabilitation</Title>
-          </Col>
-          <Col>
-            <Image src="/images/other/6.webp" />
-            <Title>Metatarsalgia</Title>
+            <Title>Revalidatie</Title>
           </Col>
         </Row>
       </SLayout>

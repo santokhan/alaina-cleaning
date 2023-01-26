@@ -11,11 +11,11 @@ export default function MassageChair() {
       <TitleDescBox>
         <Title>Shiatsu Massage</Title>
         <Desc>
-          Shiatsu is an ancient form of massage based on Chinese acupuncture
-          theory that often includes the use of breathing and stretching.
-          Shiatsu can be done through the clothes or on bare skin and uses
-          static pressure, which can vary from light holding to deep physical
-          pressure applied with the palm of the hand or thumb.
+          Shiatsu is een oude vorm van massage gebaseerd op de Chinese
+          acupunctuurtheorie die vaak het gebruik van ademhaling en stretching
+          omvat. Shiatsu kan door de kleding heen of op de blote huid worden
+          gedaan en maakt gebruik van statische druk, die kan variëren van licht
+          vasthouden tot diepe fysieke druk uitgeoefend met de handpalm of duim.
         </Desc>
       </TitleDescBox>
       <Image src="/images/massages/card/shiatsu.jpg" />

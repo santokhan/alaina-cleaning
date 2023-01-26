@@ -30,7 +30,8 @@ export default function Navbar({ children }) {
               fill="white"
             ></path>
           </svg>
-          <span className="">Book Now</span>
+          {/* <span className="">Book Now</span> */}
+          <span className="">Boek nu</span>
         </Link>
         <div className="items-center justify-between w-full text-base lg:flex lg:w-auto lg:order-1">
           <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
@@ -48,14 +49,15 @@ export default function Navbar({ children }) {
                 <ul className="py-2 text-sm text-gray-700 bg-green-50 mt-5 shadow">
                   <DDLink to="/massages/sports">sports</DDLink>
                   <DDLink to="/massages/shiatsu">shiatsu</DDLink>
-                  <DDLink to="/massages/chair">chair</DDLink>
-                  <DDLink to="/massages/relaxation">relaxation</DDLink>
+                  <DDLink to="/massages/chair">stoel</DDLink>
+                  {/* <DDLink to="/massages/relaxation">relaxation</DDLink> */}
+                  <DDLink to="/massages/relaxation">ontspanning</DDLink>
                 </ul>
               </div>
             </div>
-            {/* <NLink to="/janmorks">jan morks</NLink> */}
-            <NLink to="/#contact">contact</NLink>
-            <NItem to="/living">young living</NItem>
+            {/* <NLink to="/ahmassage">ah massage</NLink> */}
+            <NLink to="/contact">contact</NLink>
+            <NItem to="/living">Jong leven</NItem>
           </ul>
         </div>
       </div>

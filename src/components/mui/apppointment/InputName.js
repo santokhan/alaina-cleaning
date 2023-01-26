@@ -18,7 +18,8 @@ export default function InputName() {
       <div>
         <TextField
           id="name"
-          label="Name"
+          // label="Name"
+          label="Naam"
           defaultValue={data.name}
           type="text"
           onChange={(e) => {

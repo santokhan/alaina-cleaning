@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import { Box, Col, DetailsLink, Image, Row, Title } from "./CardLayout";
 import List, { Item } from "./List";
 
@@ -14,22 +12,22 @@ export default function TabPanel1() {
           <Title>Sports massage</Title>
           <List>
             <Item>
-              Sports massage is usually a partial massage, but can also be
-              applied as a firm massage to the entire body
+              Sport massage is doorgaans een deelmassage maar kan ook als
+              stevige massage toegepast worden op het gehele lichaam
             </Item>
             <Item>
-              Sports massage is not just for athletes. A firm sports massage is
-              also pleasant for non-athletes with stuck muscles.
+              Sport massage is niet alleen voor sporters. Ook voor niet-sporters
+              is een stevige sportmassage prettig bij vastzittende spieren.
             </Item>
             <Item>
-              A good sports masseur listens to your body and adjusts the
-              treatment accordingly. A sports massage can be used for painful
-              muscles or tension complaints and has a mobilizing and activating
-              effect.
+              Een goede sportmasseur luistert naar uw lichaam en past de
+              behandeling hierop aan. Een sportmassage kan worden ingezet bij
+              pijnlijke spieren of spanningsklachten en werkt mobiliserend en
+              activerend.
             </Item>
             <Item>
-              Make stuck muscles supple again and relax with a solid sports
-              massage.
+              Maak vastzittende spieren weer soepel en ontspan bij een stevige
+              sportmassage.
             </Item>
           </List>
           <DetailsLink

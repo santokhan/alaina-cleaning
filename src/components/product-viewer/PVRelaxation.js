@@ -9,13 +9,14 @@ export default function PVRelaxation() {
   return (
     <ProductViewer>
       <TitleDescBox>
-        <Title>Relaxation Massage</Title>
+        {/* <Title>Relaxation Massage</Title> */}
+        <Title>ontspanning Massage</Title>
         <Desc>
-          Relaxation massage consists of gentle to medium pressure to the body,
-          manipulating soft tissues to promote relaxation. The relaxation
-          response is the state of the heart and breathing rates going down.
-          When the body begins to relax stress hormones decrease and muscles
-          relax.
+          Ontspanningsmassage bestaat uit zachte tot gemiddelde druk op het
+          lichaam, het manipuleren van zachte weefsels om ontspanning te
+          bevorderen. De ontspanningsreactie is de toestand van het hart en de
+          ademhalingsfrequentie die naar beneden gaat. Wanneer het lichaam
+          begint te ontspannen, nemen de stresshormonen af en ontspannen ze.
         </Desc>
       </TitleDescBox>
       <Image src="/images/massages/card/relax.jpg" />

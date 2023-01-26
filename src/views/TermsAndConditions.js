@@ -68,7 +68,8 @@ export default function TermsAndConditions() {
                     </li>
                     <li className="list-item">
                       <button className="text-left cursor-pointer underline hover:text-brand-accent-light hover:no-underline">
-                        Contact Us
+                        {/* Contact Us */}
+                        NEEM CONTACT OP
                       </button>
                     </li>
                   </ol>
@@ -614,7 +615,7 @@ export default function TermsAndConditions() {
               id="contact-us"
               className="text-black text-2xl md:text-3xl font-medium"
             >
-              11. Contact Us
+              11. NEEM CONTACT OP
             </h2>
             <p className="text-gray-500 my-4">
               If you have any questions regarding this Privacy Policy, any
@@ -736,7 +737,8 @@ export default function TermsAndConditions() {
                     href="/#id"
                     className="text-left cursor-pointer underline hover:text-brand-accent-light hover:no-underline"
                   >
-                    Contact Us
+                    {/* Contact Us */}
+                    NEEM CONTACT OP
                   </a>
                 </li>
               </ol>

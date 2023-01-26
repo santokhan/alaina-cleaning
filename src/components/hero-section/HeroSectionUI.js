@@ -1,6 +1,3 @@
-import ReadMore from "./ReadMore";
-import Title from "./Title";
-
 export default function HSLayout({ startScroll, children, className }) {
   return (
     <div

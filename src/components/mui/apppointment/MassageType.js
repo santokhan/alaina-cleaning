@@ -16,17 +16,22 @@ export default function MassageType() {
   return (
     <Box sx={{ width: 320, m: 1, textTransfrom: "capitalize" }}>
       <FormControl fullWidth>
-        <InputLabel>Massage Type</InputLabel>
+        <InputLabel>
+          {/* Massage Type */}
+          Massagetype
+        </InputLabel>
         <Select
           value={data.type}
-          label="Massage Type"
+          // label="Massage Type"
+          label="Massagetype"
           required
           onChange={handleChange}
         >
           <MenuItem value="sports">Sports</MenuItem>
           <MenuItem value="shiatsu">Shiatsu</MenuItem>
-          <MenuItem value="chair">Chair</MenuItem>
-          <MenuItem value="relaxation">Relaxation</MenuItem>
+          <MenuItem value="chair">stoel</MenuItem>
+          {/* <MenuItem value="relaxation">Relaxation</MenuItem> */}
+          <MenuItem value="relaxation">ontspanning</MenuItem>
         </Select>
       </FormControl>
     </Box>

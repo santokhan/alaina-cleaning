@@ -20,7 +20,8 @@ export default function BookNow({ to, className }) {
             fill="white"
           />
         </svg>
-        <span className="">Book Now</span>
+        {/* <span className="">Book Now</span> */}
+        <span className="">Boek nu</span>
       </Link>
     </div>
   );

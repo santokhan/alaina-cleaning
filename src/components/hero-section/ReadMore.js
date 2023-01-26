@@ -1,5 +1,3 @@
-import { useEffect, useState, useRef } from "react";
-
 export default function ReadMore({ startScroll }) {
   return (
     <button

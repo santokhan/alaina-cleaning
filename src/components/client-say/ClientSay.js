@@ -1,17 +1,13 @@
 import React from "react";
-import SLayout, {
-  SHeader,
-  SMain,
-  STitle,
-} from "../section-layout/SectionLayout";
-import List, { Item } from "../whatweimport/List";
+import SLayout, { SHeader, STitle } from "../section-layout/SectionLayout";
 
 export default function ClientSay({ children }) {
   return (
     <div id="clientSay" className="bg-white relative client-say">
       <SLayout>
         <SHeader>
-          <STitle>What our happy customers say:</STitle>
+          {/* <STitle>What our happy customers say?</STitle> */}
+          <STitle>Wat onze tevreden klanten zeggen?</STitle>
           <div className="mt-8">
             <i
               className="fa fa-quote-right text-3xl xl:text-5xl"
@@ -20,9 +16,9 @@ export default function ClientSay({ children }) {
           </div>
         </SHeader>
         <div className="max-w-2xl mx-auto py-2 text-center text-[#535353] my-6 xl:my-10">
-          Men rarely acknowledge how much they love to get a massage... But I
-          want to say, that without my afterwork Friday massage sessions here,
-          my productivity would've been so much lower...
+          Mannen erkennen zelden hoe graag ze een massage krijgen... Maar ik wil
+          zeggen dat zonder mijn massagesessies op vrijdag na het werk hier mijn
+          productiviteit zoveel lager zou zijn geweest...
         </div>
         <div className="flex justify-center text-xl">Lara Gupta</div>
       </SLayout>

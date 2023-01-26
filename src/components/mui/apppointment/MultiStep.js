@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Stepper from "@mui/material/Stepper";
 import Step from "@mui/material/Step";
@@ -47,9 +46,9 @@ export default function HorizontalLinearStepper({ data, handleSubmit }) {
     handleSubmit();
   };
 
-  const handleReset = () => {
-    setActiveStep(0);
-  };
+  // const handleReset = () => {
+  //   setActiveStep(0);
+  // };
 
   return (
     <Box sx={{ width: "100%" }}>
@@ -128,15 +127,16 @@ export default function HorizontalLinearStepper({ data, handleSubmit }) {
               disabled={activeStep === 0}
               onClick={handleBack}
             >
-              Back
+              {/* Back */}
+              Rug
             </Button>
-
             {activeStep === 0 && (
               <Button
                 onClick={handleNext}
                 disabled={data.type && data.name ? false : true}
               >
-                Next
+                {/* Next */}
+                Volgende
               </Button>
             )}
             {activeStep === 1 && (
@@ -144,16 +144,20 @@ export default function HorizontalLinearStepper({ data, handleSubmit }) {
                 onClick={handleNext}
                 disabled={data.email && data.phone ? false : true}
               >
-                Next
+                {/* Next */}
+                Volgende
               </Button>
             )}
             {activeStep === 2 && (
               <Button onClick={handleNext} disabled={data.date ? false : true}>
-                Next
+                {/* Next */}
+                Volgende
               </Button>
             )}
-            {activeStep === 3 && <Button onClick={submit}>Submit</Button>}
 
+            {activeStep === 3 && (
+              <Button onClick={submit}>{/* Submit */} Indienen</Button>
+            )}
             {/* {activeStep === steps.length - 1 ? (
               <Button onClick={submit}>Submit</Button>
             ) : (

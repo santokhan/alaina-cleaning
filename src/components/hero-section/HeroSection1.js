@@ -1,4 +1,3 @@
-import ReadMore from "./ReadMore";
 import Title from "./Title";
 
 export default function HeroSection1({ startScroll }) {

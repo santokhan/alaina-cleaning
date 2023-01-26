@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import { Box, Col, DetailsLink, Image, Row, Title } from "./CardLayout";
 import List, { Item } from "./List";
 
