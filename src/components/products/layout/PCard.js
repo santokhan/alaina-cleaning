@@ -43,7 +43,7 @@ export function Price({ price, time, children, className }) {
   return (
     <div className={"flex justify-between " + className}>
       <div className="text-green-800 text-3xl font-semibold px-5">
-        ${price}/<span className="text-base">{time} minuten</span>
+        €{price}/<span className="text-base">{time} minuten</span>
       </div>
       {children}
     </div>

@@ -10,7 +10,7 @@ export default function PVRelaxation() {
     <ProductViewer>
       <TitleDescBox>
         {/* <Title>Relaxation Massage</Title> */}
-        <Title>ontspanning Massage</Title>
+        <Title>Ontspanning Massage</Title>
         <Desc>
           Ontspanningsmassage bestaat uit zachte tot gemiddelde druk op het
           lichaam, het manipuleren van zachte weefsels om ontspanning te

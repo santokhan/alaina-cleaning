@@ -28,8 +28,8 @@ export default function MassageRates({ myRef }) {
           <PMain>
             <PCard category={4} id="sports" to="/massages/sports">
               <CImg src="/images/massages/card/sport.jpg" />
-              <CTitle>sports</CTitle>
-              <CDes>Traveling from 15 up to 25 km +10,-</CDes>
+              <CTitle>sportmassage</CTitle>
+              <CDes>Regio: Brummen +15km</CDes>
               <Price price={65} time={60}>
                 <BookNow to="/appointments"></BookNow>
               </Price>
@@ -37,7 +37,7 @@ export default function MassageRates({ myRef }) {
             <PCard category={4} id="shiatsu" to="/massages/shiatsu">
               <CImg src="/images/massages/card/shiatsu.jpg" />
               <CTitle>shiatsu</CTitle>
-              <CDes>Traveling from 15 up to 25 km +10,-</CDes>
+              <CDes>Regio: Brummen +15km</CDes>
               <Price price={65} time={60}>
                 <BookNow to="/appointments"></BookNow>
               </Price>
@@ -45,16 +45,16 @@ export default function MassageRates({ myRef }) {
             <PCard category={2} to="/massages/relaxation">
               <CImg src="/images/massages/card/relax.jpg" />
               <CTitle>Ontspanning</CTitle>
-              <CDes>Traveling from 15 up to 25 km +10,-</CDes>
+              <CDes>Regio: Brummen +15km</CDes>
               <Price price={65} time={60}>
                 <BookNow to="/appointments"></BookNow>
               </Price>
             </PCard>
             <PCard category={2} id="chair" to="/massages/chair">
               <CImg src="/images/massages/card/chair.png" />
-              <CTitle>Stoel</CTitle>
-              <CDes>Traveling from 15 up to 25 km +10,-</CDes>
-              <Price price={65} time={60}>
+              <CTitle>Stoelmassage</CTitle>
+              <CDes>Regio: Brummen +15km</CDes>
+              <Price price={35} time={30}>
                 <BookNow to="/appointments"></BookNow>
               </Price>
             </PCard>
