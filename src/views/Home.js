@@ -1,7 +1,6 @@
 import Header from "../components/header/Header";
 import MassageRates from "../components/products/massage-rates/MassageRates";
 import Footer from "../components/footer/Footer";
-import WhyIcon from "../components/why-icon/WhyIcon";
 import ContactFrom from "../components/contact/ContactFrom";
 import Gallary from "../components/gallary/Gallary";
 import React, { useRef } from "react";
@@ -11,7 +10,6 @@ import MassageVertical from "../components/mui/tabs/MassageVertical";
 import WhyChooseUs from "../components/why-choose-us/WhyChooseUs";
 import WhatWeProvide from "../components/what-we-provide/WhatWeProvide";
 import ClientSay from "../components/client-say/ClientSay";
-import Gallery from "../components/mui/gallery/Gallery";
 import SercviceArea from "../components/service-area/ServiceArea";
 import PageLoader from "../components/page-loader/PageLoader";
 import Appointments from "../components/mui/apppointment/Appointment";

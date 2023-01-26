@@ -7,7 +7,7 @@ import BookOnline from "./views/BookOnline";
 import YoungLiving from "./views/YoungLiving";
 import PageLoader from "./components/page-loader/PageLoader";
 import About from "./views/About";
-import TermsAndConditions from "./views/TermsAndConditions";
+// import TermsAndConditions from "./views/TermsAndConditions";
 import MassageShiatsu from "./views/MassageShiatsu";
 import MassageSports from "./views/MassageSports";
 import MassageChair from "./views/MassageChair";

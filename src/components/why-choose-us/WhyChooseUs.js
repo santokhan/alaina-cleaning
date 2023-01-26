@@ -1,6 +1,5 @@
 import React from "react";
 import SLayout, { STitle } from "../section-layout/SectionLayout";
-import List, { Item } from "../whatweimport/List";
 
 export default function WhyChooseUs({ children }) {
   return (
