@@ -128,7 +128,7 @@ export default function HorizontalLinearStepper({ data, handleSubmit }) {
               onClick={handleBack}
             >
               {/* Back */}
-              Rug
+              Terug
             </Button>
             {activeStep === 0 && (
               <Button
