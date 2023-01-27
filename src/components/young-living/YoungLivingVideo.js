@@ -1,6 +1,5 @@
 import React from "react";
 import SLayout, { SDes, STitle } from "../section-layout/SectionLayout";
-import List, { Item } from "../whatweimport/List";
 
 export default function YoungLivingVideo({ children }) {
   return (

@@ -75,9 +75,11 @@ export function NavItem({ children }) {
 }
 export function NavLink({ children, path }) {
   return (
-    <a href={path} className={linkClass + NavActive(path)}>
-      {children}
-    </a>
+    <div>
+      <a href={path} className={linkClass + NavActive(path)}>
+        {children}
+      </a>
+    </div>
   );
 }
 export function NLink({ children, path }) {
