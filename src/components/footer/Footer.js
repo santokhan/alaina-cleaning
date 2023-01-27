@@ -54,7 +54,6 @@ export default function Footer() {
                 className="flex gap-2 items-center hover:underline hover:underline-offset-4 hover:decoration-2 hover:translate-x-2 transition-all ease-in"
               >
                 <Envelope />
-                {/* jandatkan@gmail.com */}
                 biz@ahmassage.nl
               </a>
             </li>
@@ -65,7 +64,6 @@ export default function Footer() {
     </footer>
   );
 }
-
 const linkClass =
   "hover:underline hover:underline-offset-4 hover:decoration-2 text-raisin font-medium  hover:translate-x-2 transition-all ease-in block py-2 ";
 
@@ -91,7 +89,6 @@ export function NLink({ children, path }) {
     </li>
   );
 }
-
 export function Subscribe({ children }) {
   return (
     <form className="pr-2 py-4 max-w-sm">

@@ -14,7 +14,7 @@ export default function MassageRates({ myRef }) {
 
   return (
     <AgriculturalContext.Provider value={{ tab, handleTab }}>
-      <div id="agricultural">
+      <div>
         <PLayout myRef={myRef}>
           <PHeader>
             <PTitle>TARIEVEN AH Massage</PTitle>
