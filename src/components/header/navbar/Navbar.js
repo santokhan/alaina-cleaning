@@ -1,14 +1,8 @@
-// import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../logo/Logo";
 import NavActive from "./NavActive";
 
 export default function Navbar({ children }) {
-  // const [dropdown, setdropdown] = useState(false);
-  // function handleDropdown() {
-  //   setdropdown(!dropdown);
-  // }
-
   return (
     <div className="w-full border-gray-200 h-14 hidden lg:block">
       <div className="h-full flex flex-wrap items-center justify-between max-w-screen-xl mx-auto">
