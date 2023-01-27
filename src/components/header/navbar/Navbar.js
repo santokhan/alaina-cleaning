@@ -1,17 +1,16 @@
-import { useState, useEffect } from "react";
-import { useLocation, Link } from "react-router-dom";
+// import { useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../logo/Logo";
 import NavActive from "./NavActive";
-import BookNow from "../../products/layout/BookNow";
 
 export default function Navbar({ children }) {
-  const [dropdown, setdropdown] = useState(false);
-  function handleDropdown() {
-    setdropdown(!dropdown);
-  }
+  // const [dropdown, setdropdown] = useState(false);
+  // function handleDropdown() {
+  //   setdropdown(!dropdown);
+  // }
 
   return (
-    <nav className="w-full border-gray-200 h-14 hidden lg:block">
+    <div className="w-full border-gray-200 h-14 hidden lg:block">
       <div className="h-full flex flex-wrap items-center justify-between max-w-screen-xl mx-auto">
         <Logo />
         <Link
@@ -61,7 +60,7 @@ export default function Navbar({ children }) {
           </ul>
         </div>
       </div>
-    </nav>
+    </div>
   );
 }
 

@@ -4,11 +4,11 @@ export default function TermsAndConditions() {
       <div className="text-gray-900 text-5xl lg:text-8xl text-center mt-20 font-bold">
         Privacy Policy
       </div>
-      <div className="relative mt-16 md:mt-10 lg:mt-28 mx-auto md:text-lg md:grid md:grid-cols-3 md:gap-8 lg:gap-12 lg:text-2xl">
+      <div className="relative mt-16 md:mt-10 lg:mt-28 mx-auto md:text-lg md:gri md:gri-cols-3 md:gap-8 lg:gap-12 lg:text-2xl">
         <div className="md:col-span-2">
           <div className="mb-8">
             <div className="space-y-4 mt-2 lg:space-y-6">
-              <dl className="md:grid md:text-xl md:hidden" back-to-top="true">
+              <dl className="md:gri md:text-xl md:hidden" back-to-top="true">
                 <div className="border-t-2 md:hidden"></div>
                 <div className="mt-8 md:mt-0 mb-8">
                   <h2 className="text-black mb-4 text-2xl md:text-3xl font-medium">
@@ -643,7 +643,7 @@ export default function TermsAndConditions() {
         </div>
         <div className="relative">
           <dl
-            className="md:grid md:text-xl hidden md:block md:sticky md:top-24"
+            className="md:gri md:text-xl hidden md:block md:sticky md:top-24"
             back-to-top="true"
           >
             <div className="border-t-2 md:hidden"></div>

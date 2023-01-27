@@ -1,8 +1,7 @@
-import { useState, useEffect } from "react";
-import { useLocation, Link } from "react-router-dom";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../logo/Logo";
 import NavActive from "../navbar/NavActive";
-import BookNow from "../../products/layout/BookNow";
 
 export default function Navbar({ children }) {
   const [dropdown, setdropdown] = useState(false);
