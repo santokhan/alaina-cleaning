@@ -29,11 +29,11 @@ export default function Footer() {
         <div className="w-auto py-2 lg:py-0 mr-12">
           <div className="uppercase font-bold mb-2">Massages</div>
           <NL>
-            <NLink path="/massages/sports">sports</NLink>
-            <NLink path="/massages/shiatsu">shiatsu</NLink>
-            <NLink path="/massages/chair">stoel</NLink>
+            <NLink path="/massages/sports">sportmassage</NLink>
+            <NLink path="/massages/shiatsu">Shiatsumassge</NLink>
+            <NLink path="/massages/chair">Stoelmassage</NLink>
             {/* <NLink path="/massages/relaxation">relaxation</NLink> */}
-            <NLink path="/massages/relaxation">ontspanning</NLink>
+            <NLink path="/massages/relaxation">ontspanningsmassage</NLink>
           </NL>
         </div>
         <div className="w-full sm:w-1/2 lg:w-3/12 py-2 lg:py-0">
@@ -54,7 +54,8 @@ export default function Footer() {
                 className="flex gap-2 items-center hover:underline hover:underline-offset-4 hover:decoration-2 hover:translate-x-2 transition-all ease-in"
               >
                 <Envelope />
-                jandatkan@gmail.com
+                {/* jandatkan@gmail.com */}
+                biz@ahmassage.nl
               </a>
             </li>
           </NL>
@@ -100,7 +101,7 @@ export function Subscribe({ children }) {
           id="email"
           aria-describedby="helper-text-explanation"
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-green-500 focus:border-green-500 block w-full px-4 py-3 relative rounded-2xl overflow-hidden"
-          placeholder="jandatkan@gmail.com"
+          placeholder="biz@ahmassage.nl"
         />
         <button
           type="button"
