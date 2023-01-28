@@ -9,15 +9,15 @@ export default function About() {
     <>
       <Header></Header>
       <div className="max-w-7xl mx-auto px-4 pt-20">
-        <div class="Panel">
-          <div class="Panel-section Panel-section--full Panel-header">
-            <header class="PageHead">
-              <h1 class="PageHead-title">Wat is een lichaamsmassage?</h1>
-              <hr class="Splitter" />
+        <div className="Panel">
+          <div className="Panel-section Panel-section--full Panel-header">
+            <header className="PageHead">
+              <h1 className="PageHead-title">Wat is een lichaamsmassage?</h1>
+              <hr className="Splitter" />
             </header>
           </div>
-          <div class="Panel-section Panel-section--narrow Prose intro-para">
-            <p class="lede">
+          <div className="Panel-section Panel-section--narrow Prose intro-para">
+            <p className="lede">
               Massage is een behandeling die verschillende soorten fysiek
               contact gebruikt om het lichaam te ontspannen, nieuw leven in te
               blazen en te genezen. Het wordt gebruikt om een ​​breed scala aan

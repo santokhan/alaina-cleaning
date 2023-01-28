@@ -7,13 +7,12 @@ export default function PCard({ children, category, id, to = "/" }) {
 
   if (tab === 1 || tab === category) {
     return (
-      <Link
-        to={to}
+      <div
         className="w-[372px] bg-white shadow-xl hover:scale-105 transition-all duration-200 ease-out rounded-xl overflow-hidden"
         id={id}
       >
         {children}
-      </Link>
+      </div>
     );
   } else {
     return "";
