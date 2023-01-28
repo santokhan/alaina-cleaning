@@ -40,7 +40,7 @@ export default function MassageRates({ myRef }) {
             <PCard category={4} id="shiatsu">
               <PDetails to="/massages/shiatsu">
                 <CImg src="/images/massages/card/shiatsu.jpg" />
-                <CTitle>Shiatsumassge</CTitle>
+                <CTitle>Shiatsumassage</CTitle>
                 <CDes>Regio: Brummen +15km</CDes>
               </PDetails>
               <Price price={65} time={60}>

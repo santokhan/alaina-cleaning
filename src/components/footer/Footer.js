@@ -31,7 +31,7 @@ export default function Footer() {
           <div className="uppercase font-bold mb-2">Massages</div>
           <NL>
             <NLink path="/massages/sports">sportmassage</NLink>
-            <NLink path="/massages/shiatsu">shiatsumassge</NLink>
+            <NLink path="/massages/shiatsu">shiatsumassage</NLink>
             <NLink path="/massages/chair">stoelmassage</NLink>
             {/* <NLink path="/massages/relaxation">relaxation</NLink> */}
             <NLink path="/massages/relaxation">ontspanningsmassage</NLink>

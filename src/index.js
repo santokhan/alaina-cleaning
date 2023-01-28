@@ -12,6 +12,7 @@ import MassageShiatsu from "./views/MassageShiatsu";
 import MassageSports from "./views/MassageSports";
 import MassageChair from "./views/MassageChair";
 import Massages from "./views/Massages";
+import Contact from "./views/Contact";
 import MassageRelaxation from "./views/MassageRelaxation";
 
 import "./index.css";
@@ -26,6 +27,7 @@ root.render(
         <Route path="/living" element={<YoungLiving />}></Route>
         <Route path="/pageloader" element={<PageLoader />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
         <Route path="/terms" element={<MassageChair />}></Route>
         <Route path="/massages" element={<Massages />}></Route>
         <Route path="/massages/shiatsu" element={<MassageShiatsu />}></Route>
