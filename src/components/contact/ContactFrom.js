@@ -1,13 +1,11 @@
-import React from "react";
-import { useForm, ValidationError } from "@formspree/react";
+import { useState } from "react";
+import axios from "axios";
 import SLayout, { SHeader, STitle } from "../section-layout/SectionLayout";
+// Mui
+import Alert from "@mui/material/Alert";
+import Stack from "@mui/material/Stack";
 
 export default function ContactFrom() {
-  const [state, handleSubmit] = useForm("xbjedjqo");
-  if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
-  }
-
   return (
     <div id="contact">
       <SLayout>
@@ -24,7 +22,7 @@ export default function ContactFrom() {
             />
           </div>
           <div className="w-full p-6 lg:p-10">
-            <Form state={state} handleSubmit={handleSubmit}></Form>
+            <Form></Form>
           </div>
         </div>
       </SLayout>
@@ -32,9 +30,34 @@ export default function ContactFrom() {
   );
 }
 
-export function Form({ state, handleSubmit }) {
+export function Form() {
+  const [data, setdata] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  function update(obj) {
+    setdata({ ...data, ...obj });
+  }
+
+  const [submitted, setsubmitted] = useState(false);
+
+  function Submitting(e) {
+    e.preventDefault();
+    axios
+      .post("https://formspree.io/f/xbjedjqo", { data: data })
+      .then((res) => {
+        if (res.status === 200) {
+          setsubmitted(true);
+        }
+      });
+  }
+
   return (
-    <form>
+    <form onSubmit={Submitting}>
       <div className="flex flex-wrap sm:flex-nowrap sm:gap-8">
         <div className="w-full mb-8">
           <label
@@ -47,10 +70,14 @@ export function Form({ state, handleSubmit }) {
           <input
             type="text"
             id="firstName"
+            name="firstName"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-700 focus:border-green-700 block w-full p-2.5"
             placeholder="John"
-            defaultValue={state.firsName}
+            defaultValue={data.firstName}
             required
+            onChange={(e) => {
+              update({ firstName: e.target.value });
+            }}
           />
         </div>
         <div className="w-full mb-8">
@@ -64,10 +91,14 @@ export function Form({ state, handleSubmit }) {
           <input
             type="text"
             id="lastName"
+            name="lastName"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-700 focus:border-green-700 block w-full p-2.5"
             placeholder="Doe"
-            defaultValue={state.lastName}
+            defaultValue={data.lastName}
             required
+            onChange={(e) => {
+              update({ lastName: e.target.value });
+            }}
           />
         </div>
       </div>
@@ -82,10 +113,14 @@ export function Form({ state, handleSubmit }) {
           <input
             type="email"
             id="email"
+            name="email"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-700 focus:border-green-700 block w-full p-2.5"
             placeholder="info@ahmassage.nl"
-            defaultValue={state.email}
+            defaultValue={data.email}
             required
+            onChange={(e) => {
+              update({ email: e.target.value });
+            }}
           />
         </div>
         <div className="w-full mb-8">
@@ -99,10 +134,14 @@ export function Form({ state, handleSubmit }) {
           <input
             type="text"
             id="phone"
+            name="phone"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-700 focus:border-green-700 block w-full p-2.5"
             placeholder="+2511 1668 6900"
-            defaultValue={state.phone}
+            defaultValue={data.phone}
             required
+            onChange={(e) => {
+              update({ phone: e.target.value });
+            }}
           />
         </div>
       </div>
@@ -117,8 +156,12 @@ export function Form({ state, handleSubmit }) {
         <textarea
           id="message"
           rows="6"
+          name="message"
           className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-green-700 focus:border-green-700"
           placeholder="Write your thoughts here..."
+          onChange={(e) => {
+            update({ message: e.target.value });
+          }}
         ></textarea>
       </div>
       <div className="flex justify-end w-full mt-8">
@@ -130,6 +173,11 @@ export function Form({ state, handleSubmit }) {
           Indienen
         </button>
       </div>
+      {submitted ?? (
+        <Stack sx={{ width: "100%" }} spacing={2}>
+          <Alert severity="success">Thank you for contact with us.</Alert>
+        </Stack>
+      )}
     </form>
   );
 }
