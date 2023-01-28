@@ -124,9 +124,9 @@ export function NLink({ children, to }) {
 export function DDLink({ children, to }) {
   return (
     <li className="py-3 px-6 relative font-medium capitalize">
-      <a href={to} className={linkClass + NavActive(to)}>
+      <Link to={to} className={linkClass + NavActive(to)}>
         {children}
-      </a>
+      </Link>
     </li>
   );
 }

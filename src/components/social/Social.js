@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 export default function Social() {
   return <SocialIcon2></SocialIcon2>;
 }
 export function SocialIcon1() {
   return (
     <div className="flex justify-center items-center gap-5 lg:gap-10">
-      <a href="/" className="text-xl block icon-jump">
+      <Link to="/" className="text-xl block icon-jump">
         <svg
           width="12"
           height="20"
@@ -17,8 +19,8 @@ export function SocialIcon1() {
             fill="#337FFF"
           />
         </svg>
-      </a>
-      <a href="/" className="text-xl block icon-jump">
+      </Link>
+      <Link to="/" className="text-xl block icon-jump">
         <svg
           width="21"
           height="20"
@@ -59,8 +61,8 @@ export function SocialIcon1() {
             </radialGradient>
           </defs>
         </svg>
-      </a>
-      <a href="/" className="text-xl block icon-jump">
+      </Link>
+      <Link to="/" className="text-xl block icon-jump">
         <svg
           width="25"
           height="20"
@@ -73,14 +75,14 @@ export function SocialIcon1() {
             fill="#33CCFF"
           />
         </svg>
-      </a>
+      </Link>
     </div>
   );
 }
 export function SocialIcon2() {
   return (
     <div className="flex justify-center items-center gap-5 lg:gap-10">
-      <a href="/" className="text-xl block icon-jump">
+      <Link to="/" className="text-xl block icon-jump">
         <svg
           width="21"
           height="20"
@@ -93,8 +95,8 @@ export function SocialIcon2() {
             fill="#337FFF"
           />
         </svg>
-      </a>
-      <a href="/" className="text-xl block icon-jump">
+      </Link>
+      <Link to="/" className="text-xl block icon-jump">
         <svg
           width="21"
           height="20"
@@ -135,8 +137,8 @@ export function SocialIcon2() {
             </radialGradient>
           </defs>
         </svg>
-      </a>
-      <a href="/" className="text-xl block icon-jump">
+      </Link>
+      <Link to="/" className="text-xl block icon-jump">
         <svg
           width="25"
           height="20"
@@ -149,7 +151,7 @@ export function SocialIcon2() {
             fill="#33CCFF"
           />
         </svg>
-      </a>
+      </Link>
     </div>
   );
 }

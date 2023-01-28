@@ -139,7 +139,10 @@ export default function About() {
               die u krijgt.
             </p>
             <p>
-              <img alt="Massagebehandeling in actie" src="/images/relax.jpg" />
+              <img
+                alt="Massagebehandeling in actie"
+                src="/images/relax-2.jpg"
+              />
             </p>
             <h4>Wat te verwachten</h4>
             <p>

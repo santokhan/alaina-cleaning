@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SLayout, {
   SDes,
   SHeader,
@@ -111,7 +112,7 @@ export function Social() {
 export function SocialIcon1() {
   return (
     <div className="flex justify-center items-center gap-5 lg:gap-10">
-      <a href="/" className="text-xl block icon-jump">
+      <Link to="/" className="text-xl block icon-jump">
         <svg
           width="12"
           height="20"
@@ -124,7 +125,7 @@ export function SocialIcon1() {
             fill="#337FFF"
           />
         </svg>
-      </a>
+      </Link>
       <a href="/" className="text-xl block icon-jump">
         <svg
           width="21"
