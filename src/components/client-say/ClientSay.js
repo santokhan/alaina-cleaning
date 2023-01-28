@@ -16,7 +16,7 @@ export default function ClientSay({ children }) {
           </div>
         </SHeader>
         <div className="max-w-2xl mx-auto py-2 text-center text-[#535353] my-6 xl:my-10">
-          Mannen erkennen zelden hoe graag ze een massage krijgen... Maar ik wil
+          Mensen erkennen zelden hoe graag ze een massage krijgen... Maar ik wil
           zeggen dat zonder mijn massagesessies op vrijdag na het werk hier mijn
           productiviteit zoveel lager zou zijn geweest...
         </div>

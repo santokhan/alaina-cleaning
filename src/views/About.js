@@ -70,7 +70,7 @@ export default function About() {
             <h4>
               <img
                 alt="Essentiële olie gebruikt in massagetherapie"
-                src="/images/about/lomi_lomi_massage.jpg"
+                src="/images/relax.jpg"
               />
             </h4>
             <h4>Wat zijn de gezondheidsvoordelen van massage?</h4>
@@ -139,10 +139,7 @@ export default function About() {
               die u krijgt.
             </p>
             <p>
-              <img
-                alt="Massagebehandeling in actie"
-                src="/images/about/massage-your-questions-answered.jpg"
-              />
+              <img alt="Massagebehandeling in actie" src="/images/relax.jpg" />
             </p>
             <h4>Wat te verwachten</h4>
             <p>
@@ -174,10 +171,7 @@ export default function About() {
               nemen; vertel bijvoorbeeld of u ergens allergisch voor bent.&nbsp;
             </p>
             <h4>
-              <img
-                alt="Diep ontspannende massage"
-                src="/images/about/deep-tissue-massage.jpg"
-              />
+              <img alt="Diep ontspannende massage" src="/images/shiatsu.jpg" />
             </h4>
             <h4>Daarna</h4>
             <p>

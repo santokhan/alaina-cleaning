@@ -1,4 +1,5 @@
 import SLayout, { SDes, SMain, STitle } from "../section-layout/SectionLayout";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -7,9 +8,9 @@ export default function About() {
         <SMain>
           <div className="max-w-2xl mx-auto relative w-full overflow-hidden">
             <div className="hidden lg:flex flex-nowrap gap-2 justify-center items-center absolute -right-56 bottom-2 -rotate-90">
-              <a href="http://ahmassage.nl" className="font-semibold">
+              <Link to="http://ahmassage.nl" className="font-semibold">
                 ahmassage.nl
-              </a>
+              </Link>
               <div className="vertical-line bg-green-700"></div>
             </div>
 
@@ -18,11 +19,10 @@ export default function About() {
               <STitle>Massage Moment</STitle>
             </div>
             <SDes>
-              <span
-                id="m"
-                className="text-5xl font-bold float-left pr-1"
-              ></span>
-              Sinds 2008 verzorgt MassageWorks ambulante paramedische
+              <span id="m" className="text-5xl font-bold float-left pr-1">
+                S
+              </span>
+              inds 2008 verzorgt MassageWorks ambulante paramedische
               ondersteuning voor zowel bedrijven als particulieren. Middels
               massagevormen als Shiatsu en Stoelmassage, kan regelmatige
               behandeling een goede interventie zijn bij chronische klachten
@@ -34,9 +34,9 @@ export default function About() {
               Professionele massages bij u thuis.
             </SDes>
             <div className="flex flex-nowrap gap-2 justify-end items-center lg:hidden py-3">
-              <a href="http://ahmassage.nl" className="font-semibold">
+              <Link to="http://ahmassage.nl" className="font-semibold">
                 ahmassage.nl
-              </a>
+              </Link>
               <div className="vertical-line bg-green-700"></div>
             </div>
           </div>

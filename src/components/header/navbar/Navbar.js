@@ -79,23 +79,21 @@ export function DDItem({ children, to }) {
     </li>
   );
 }
-
 export function NLink({ children, to }) {
   return (
     <li className="capitalize">
-      <a href={to} className={linkClass + NavActive(to)}>
+      <Link to={to} className={linkClass + NavActive(to)}>
         {children}
-      </a>
+      </Link>
     </li>
   );
 }
-
 export function DDLink({ children, to }) {
   return (
     <li className="py-3 px-6 relative font-medium capitalize">
-      <a href={to} className={linkClass + NavActive(to)}>
+      <Link to={to} className={linkClass + NavActive(to)}>
         {children}
-      </a>
+      </Link>
     </li>
   );
 }

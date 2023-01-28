@@ -114,9 +114,9 @@ export function DDItem({ children, to }) {
 export function NLink({ children, to }) {
   return (
     <li className="capitalize">
-      <a href={to} className={linkClass + NavActive(to)}>
+      <Link to={to} className={linkClass + NavActive(to)}>
         {children}
-      </a>
+      </Link>
     </li>
   );
 }

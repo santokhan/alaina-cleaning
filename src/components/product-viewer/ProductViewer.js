@@ -11,16 +11,11 @@ export default function ProductViewer({ className = "", children }) {
     </div>
   );
 }
-
 export function TitleDescBox({ price, time, children, className }) {
   return (
     <div className="mr-auto place-self-center col-12 lg:col-span-7 pl-4 lg:pl-8 order-2 lg:order-1 py-16">
       {children}
-      <div className="flex justify-start gap-4">
-        <Price price={65} time={60} className={"px-0"}>
-          <BookNow className="px-0" to="/appointments"></BookNow>
-        </Price>
-      </div>
+      <div className="flex justify-start gap-4"></div>
     </div>
   );
 }
@@ -54,10 +49,11 @@ export function Image({
 }
 export function Price({ price, time, children, className }) {
   return (
-    <div className={"flex justify-between gap-8 " + className}>
+    <div className={"flex justify-start gap-8 " + className}>
       <div className="text-green-800 text-3xl font-semibold">
-        ${price}/<span className="text-base">{time} minuten</span>
+        €{price}/<span className="text-base">{time} minuten</span>
       </div>
+      <BookNow className="px-0" to="/appointments"></BookNow>
       {children}
     </div>
   );

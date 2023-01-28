@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function BookNow({ to, className }) {
+export default function BookNow({ to = "/", className = "" }) {
   return (
     <div className={"px-5 pb-5 flex justify-start " + className}>
       <Link
@@ -20,7 +20,7 @@ export default function BookNow({ to, className }) {
             fill="white"
           />
         </svg>
-        {/* <span className="">Book Now</span> */}
+        {/* Book Now< */}
         <span className="">Boek nu</span>
       </Link>
     </div>

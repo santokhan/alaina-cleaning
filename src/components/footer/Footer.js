@@ -2,6 +2,7 @@ import LogoFooter from "../header/logo/LogoFooter";
 import Social from "../social/Social";
 import React from "react";
 import NavActive from "../header/navbar/NavActive";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -30,8 +31,8 @@ export default function Footer() {
           <div className="uppercase font-bold mb-2">Massages</div>
           <NL>
             <NLink path="/massages/sports">sportmassage</NLink>
-            <NLink path="/massages/shiatsu">Shiatsumassge</NLink>
-            <NLink path="/massages/chair">Stoelmassage</NLink>
+            <NLink path="/massages/shiatsu">shiatsumassge</NLink>
+            <NLink path="/massages/chair">stoelmassage</NLink>
             {/* <NLink path="/massages/relaxation">relaxation</NLink> */}
             <NLink path="/massages/relaxation">ontspanningsmassage</NLink>
           </NL>
@@ -40,22 +41,22 @@ export default function Footer() {
           <div className="uppercase font-bold mb-2">Contact</div>
           <NL>
             <li className="py-2 flex justify-start items-start gap-2">
-              <a
-                href="tel:+251116686900"
+              <Link
+                to="tel:+251116686900"
                 className="flex gap-2 items-center hover:underline hover:underline-offset-4 hover:decoration-2 hover:translate-x-2 transition-all ease-in"
               >
                 <Call />
                 +31642744368
-              </a>
+              </Link>
             </li>
             <li className="py-2 flex justify-start items-start gap-2">
-              <a
-                href="mailto:info@iconimex.com"
+              <Link
+                to="mailto:info@iconimex.com"
                 className="flex gap-2 items-center hover:underline hover:underline-offset-4 hover:decoration-2 hover:translate-x-2 transition-all ease-in"
               >
                 <Envelope />
                 biz@ahmassage.nl
-              </a>
+              </Link>
             </li>
           </NL>
         </div>
@@ -76,18 +77,18 @@ export function NavItem({ children }) {
 export function NavLink({ children, path }) {
   return (
     <div>
-      <a href={path} className={linkClass + NavActive(path)}>
+      <Link to={path} className={linkClass + NavActive(path)}>
         {children}
-      </a>
+      </Link>
     </div>
   );
 }
 export function NLink({ children, path }) {
   return (
     <li className="h-full relative capitalize">
-      <a href={path} className={linkClass + NavActive(path)}>
+      <Link to={path} className={linkClass + NavActive(path)}>
         {children}
-      </a>
+      </Link>
     </li>
   );
 }
@@ -104,9 +105,10 @@ export function Subscribe({ children }) {
         />
         <button
           type="button"
-          className="text-white bg-green-700 hover:bg-green-900 font-medium text-sm px-5 py-2.5 absolute right-2 bottom-2 rounded-xl focus:bottom-[3px] focus:right-1 shadow-xl focus:shadow-none transition-all ease-in"
+          className="text-white bg-green-700 hover:bg-green-900 font-medium text-sm px-5 py-2.5 absolute right-2 bottom-2 rounded-xl focus:bottom-[3px] focus:right-1 shadow-xl focus:shadow-none transition-all ease-in capitalize"
         >
-          Submit
+          {/* Submit */}
+          indienen
         </button>
       </div>
     </form>
@@ -121,7 +123,6 @@ export function Copyright() {
     </div>
   );
 }
-
 export const Call = () => (
   <svg
     width="20"

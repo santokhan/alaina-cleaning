@@ -1,67 +1,8 @@
-@charset "UTF-8";
-
-/*!normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css*/
-html {
-    font-family: sans-serif;
-    line-height: 1.15;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
-}
-
-body {
-    margin: 0
-}
-
-article,
-aside,
-footer,
-header,
-nav,
-section {
-    display: block
-}
-
 h1 {
     font-size: 2em;
     margin: .67em 0
 }
 
-figcaption,
-figure,
-main {
-    display: block
-}
-
-figure {
-    margin: 1em 40px
-}
-
-hr {
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible
-}
-
-pre {
-    font-family: monospace, monospace;
-    font-size: 1em
-}
-
-a {
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects
-}
-
-a:active,
-a:hover {
-    outline-width: 0
-}
-
-abbr[title] {
-    border-bottom: none;
-    text-decoration: underline;
-    text-decoration: underline dotted
-}
 
 b,
 strong {
@@ -171,27 +112,10 @@ template {
     box-sizing: border-box
 }
 
-html {
-    font-size: 16px;
-    line-height: 1.3;
-    background: #fbfbfb;
-    font-family: nunito sans, Helvetica, sans-serif;
-    height: 100%
-}
-
-body {
-    color: #212121;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased
-}
-
 body.has-overlay {
     overflow: hidden
 }
 
-body {
-    height: 100%
-}
 
 blockquote,
 dd,

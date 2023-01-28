@@ -98,7 +98,7 @@ export default function VerticalTabs() {
                   width: 1,
                 }}
                 // label="Shiatsu massage"
-                label="Shiatsu massage"
+                label="Shiatsumassage"
                 {...a11yProps(0)}
               />
               <Tab
@@ -111,7 +111,7 @@ export default function VerticalTabs() {
                   width: 1,
                 }}
                 // label="Relaxation massage"
-                label="Ontspannings massage"
+                label="Ontspanningsmassage"
                 {...a11yProps(1)}
               />
               <Tab
@@ -124,7 +124,7 @@ export default function VerticalTabs() {
                   width: 1,
                 }}
                 // label="Chair massage"
-                label="Stoel Massage"
+                label="StoelMassage"
                 {...a11yProps(2)}
               />
               <Tab
@@ -137,7 +137,7 @@ export default function VerticalTabs() {
                   width: 1,
                 }}
                 // label="Sports massage"
-                label="Sports massage"
+                label="Sportmassage"
                 {...a11yProps(4)}
               />
             </Tabs>

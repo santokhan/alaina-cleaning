@@ -1,6 +1,7 @@
 import ProductViewer, {
   Desc,
   Image,
+  Price,
   Title,
   TitleDescBox,
 } from "./ProductViewer";
@@ -9,7 +10,7 @@ export default function MassageChair() {
   return (
     <ProductViewer>
       <TitleDescBox>
-        <Title>Shiatsu Massage</Title>
+        <Title>Shiatsumassage</Title>
         <Desc>
           Shiatsu is een oude vorm van massage gebaseerd op de Chinese
           acupunctuurtheorie die vaak het gebruik van ademhaling en stretching
@@ -17,6 +18,7 @@ export default function MassageChair() {
           gedaan en maakt gebruik van statische druk, die kan variëren van licht
           vasthouden tot diepe fysieke druk uitgeoefend met de handpalm of duim.
         </Desc>
+        <Price price="65" time="60"></Price>
       </TitleDescBox>
       <Image src="/images/massages/card/shiatsu.jpg" />
     </ProductViewer>

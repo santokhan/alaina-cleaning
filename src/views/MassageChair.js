@@ -1,5 +1,5 @@
 import Header from "../components/header/Header";
-import { MassageRatesIndivudual } from "../components/products/massage-rates/MassageRates";
+import MassageRatesIndivudual from "../components/products/massage-rates/MassageRatesIndivudual";
 import Footer from "../components/footer/Footer";
 import React, { useRef } from "react";
 import SercviceArea from "../components/service-area/ServiceArea";
