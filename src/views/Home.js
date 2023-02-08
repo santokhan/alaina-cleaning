@@ -47,17 +47,16 @@ export default function Home() {
         <WhyChooseUs></WhyChooseUs>
         <WhatWeProvide></WhatWeProvide>
         <MassageRates myRef={myRef}></MassageRates>
-        <SLayout>
+        {/* <SLayout>
           <div className="bg-white pt-10">
             <SHeader>
-              {/* <STitle>BOOK AN APPOINTMENTS NOW</STitle> */}
               <STitle>BOEK NU EEN AFSPRAAK</STitle>
             </SHeader>
             <SMain>
               <Appointments></Appointments>
             </SMain>
           </div>
-        </SLayout>
+        </SLayout> */}
         <ClientSay></ClientSay>
         <Gallary></Gallary>
         <ContactFrom></ContactFrom>
