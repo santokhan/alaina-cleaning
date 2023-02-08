@@ -12,7 +12,7 @@ export default function TabPanel1() {
       <Col>
         <Box>
           {/* Chair massage */}
-          <Title>Stoel Massage</Title>
+          <Title>Stoelmassage</Title>
           <List>
             <Item>
               Even uw hoofd voorover te rusten leggen in een Massagestoel
@@ -21,9 +21,28 @@ export default function TabPanel1() {
             <Item>
               De meest laagdrempelige massagevorm is de stoelmassage. Hij kan
               overal naar toe en zit fantastisch. Met drukpuntmassage worden uw
-              bovenlijf, hoofd, handen en armen snel in ontspanning
-              teruggebracht. Er wordt gebruik gemaakt van drukken, wrijven,
-              schudden, kloppen, kneden en meer.
+              bovenlijf, hoofd, nek en schouders, handen en armen snel in
+              ontspanning terug gebracht. De masseur kan overal goed bij terwijl
+              u de rust van de zitpositie ervaart.
+            </Item>
+            <Item>
+              Stoelmassage is ook zeer geschikt als bedrijfsmassage en word net
+              als Shiatsu over de kleding heen gegeven. Deze effectieve
+              onderbreking onder werktijden, zorgt ervoor dat er vitaliteit
+              gewonnen word en is altijd ook in het voordeel van de werkgever.
+              Wanneer de nek gespannen raakt van het turen naar een beeldscherm,
+              trekt men vaak onbewust de schouders op met merkbare gevolgen aan
+              het eind van de dag.
+            </Item>
+            <Item>
+              Er wordt gebruik gemaakt van drukken, wrijven, rekken, schudden,
+              kloppen, kneden en meer.
+            </Item>
+            <Item>
+              Kies voor een Stoelmassage als kado voor uw werknemers, wanneer u
+              vooral rug nek en schouder spanningen wilt verhelpen, voor
+              verbeterde alertheid en overzicht, bij RSI klachten, muisarm,
+              tennis elleboog etc.
             </Item>
             <Item>
               Stoelmassage is ook zeer geschikt als{" "}

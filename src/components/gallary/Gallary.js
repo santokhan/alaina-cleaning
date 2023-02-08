@@ -2,6 +2,17 @@ import React, { useState } from "react";
 import PLayout from "../products/layout/PLayout";
 import PHeader, { PTitle, PIcon, PDes } from "../products/layout/PHeader";
 import PMain from "../products/layout/PMain";
+//
+import img1 from "../../assets/images/gallery/1.jpg";
+import img2 from "../../assets/images/gallery/2.jpg";
+import img3 from "../../assets/images/gallery/3.jpg";
+import img4 from "../../assets/images/gallery/4.jpg";
+import img5 from "../../assets/images/gallery/5.jpg";
+import img6 from "../../assets/images/gallery/6.jpg";
+import img7 from "../../assets/images/gallery/7.jpg";
+import img8 from "../../assets/images/gallery/8.jpg";
+
+const sources = [img1, img2, img3, img4, img5, img6, img7, img8];
 
 export default function Gallary() {
   const [src, setsrc] = useState(0);
@@ -15,7 +26,7 @@ export default function Gallary() {
       </PHeader>
       <PMain>
         <ZoomView src={src} setsrc={setsrc}></ZoomView>
-        {[...Array(7)].map((e, i) => {
+        {sources.map((e, i) => {
           if (i < limit) {
             return (
               <button
@@ -27,7 +38,8 @@ export default function Gallary() {
                 key={`/images/other/${i + 1}.jpg`}
               >
                 <img
-                  src={`/images/other/${i + 1}.jpg`}
+                  // src={`/images/other/${i + 1}.jpg`}
+                  src={e}
                   alt="products"
                   className="w-[372px] h-[372px] object-cover rounded-xl shadow-xl "
                 />

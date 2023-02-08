@@ -11,7 +11,7 @@ export default function About() {
       <Header></Header>
       <div className="py-10"></div>
       <div className="pt-20 pb-10 flex justify-center">
-        <img src="/images/qr.webp" alt="qr" />
+        <img src="/images/qr.webp" alt="qr" className="w-full max-w-lg" />
       </div>
       <ContactFrom></ContactFrom>
       <Footer></Footer>
