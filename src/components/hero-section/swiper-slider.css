@@ -31,12 +31,16 @@
     object-fit: cover;
 }
 
+.swiper-pagination-bullet-active {
+    background-color: white;
+}
+
 @media (width>768px) {
     .swiper-slide {
         text-align: center;
         font-size: 18px;
         background: #fff;
-        height: calc(100vh - 64px);
+        height: 68vh;
 
         /* Center slide text vertically */
         display: -webkit-box;

@@ -9,11 +9,11 @@ import Appointment from "../components/mui/apppointment/Appointment";
 import PageLoader from "../components/page-loader/PageLoader";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { green } from "@mui/material/colors";
+import { blue } from "@mui/material/colors";
 const theme = createTheme({
   palette: {
     primary: {
-      main: green[900],
+      main: blue[600],
     },
   },
 });

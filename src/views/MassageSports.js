@@ -7,11 +7,11 @@ import PageLoader from "../components/page-loader/PageLoader";
 import PVSports from "../components/product-viewer/PVSports";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { green } from "@mui/material/colors";
+import { blue } from "@mui/material/colors";
 const theme = createTheme({
   palette: {
     primary: {
-      main: green[900],
+      main: blue[600],
     },
   },
 });

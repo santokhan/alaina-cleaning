@@ -22,11 +22,17 @@ export function SIcon({ children }) {
 }
 export function STitle({ children, className = "" }) {
   return (
-    <div className={"text-2xl font-semibold uppercase playfair " + className}>
+    <div
+      className={
+        "text-4xl lg:text-5xl font-medium capitalize text-gray-700 " + className
+      }
+    >
       {children}
     </div>
   );
 }
-export function SDes({ children }) {
-  return <div className="text-base">{children}</div>;
+export function SDes({ children, className = "" }) {
+  return (
+    <div className={"text-base text-gray-500 " + className}>{children}</div>
+  );
 }

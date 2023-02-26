@@ -7,6 +7,7 @@ export default function NavActive(to) {
   // console.log(fullPath, to);
 
   if (fullPath === to) {
-    return "nav-active";
+    // return "nav-active";
+    return " transition-all ease-out text-green-600 ";
   }
 }

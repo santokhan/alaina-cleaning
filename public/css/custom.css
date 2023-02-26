@@ -82,19 +82,19 @@ html {
 }
 
 .slide-1 {
-    background-image: url("/images/slider/576/1.jpg");
+    background-image: url("/images/slider/1.jpg");
 }
 
 .slide-2 {
-    background-image: url("/images/slider/576/2.jpg");
+    background-image: url("/images/slider/2.jpg");
 }
 
 .slide-3 {
-    background-image: url("/images/slider/576/3.jpg");
+    background-image: url("/images/slider/3.jpg");
 }
 
 .slide-4 {
-    background-image: url("/images/slider/576/4.jpg");
+    background-image: url("/images/slider/4.jpg");
 }
 
 @media (min-width: 576px) {

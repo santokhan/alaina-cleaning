@@ -12,20 +12,16 @@ import WhatWeProvide from "../components/what-we-provide/WhatWeProvide";
 import ClientSay from "../components/client-say/ClientSay";
 import SercviceArea from "../components/service-area/ServiceArea";
 import PageLoader from "../components/page-loader/PageLoader";
-import Appointments from "../components/mui/apppointment/Appointment";
+// import Appointments from "../components/mui/apppointment/Appointment";
 import Chat from "../components/Chat/Chat";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { green } from "@mui/material/colors";
-import SLayout, {
-  SHeader,
-  SMain,
-  STitle,
-} from "../components/section-layout/SectionLayout";
+import { blue } from "@mui/material/colors";
+import HowItWorks from "../components/how-it-works/HowITWorks";
 const theme = createTheme({
   palette: {
     primary: {
-      main: green[900],
+      main: blue[600],
     },
   },
 });
@@ -45,6 +41,7 @@ export default function Home() {
         <About></About>
         <MassageVertical></MassageVertical>
         <WhyChooseUs></WhyChooseUs>
+        <HowItWorks></HowItWorks>
         <WhatWeProvide></WhatWeProvide>
         <MassageRates myRef={myRef}></MassageRates>
         {/* <SLayout>

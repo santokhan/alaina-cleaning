@@ -51,8 +51,7 @@ export function Col({ children, order, className }) {
   return (
     <div
       className={
-        "w-6/12 md:w-3/12 lg:w-2/12 flex flex-col items-center px-4 " +
-        className
+        "w-1/1 md:w-6/12 lg:w-4/12 flex flex-col items-center px-4 " + className
       }
     >
       {children}
